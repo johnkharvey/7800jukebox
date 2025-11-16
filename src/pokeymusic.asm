@@ -64,6 +64,7 @@
 ;=================
 DEBUG_MUSIC_OFF		equ	0	; 1 if true, 0 if false.  Disables music on True
 
+
 ;=========
 ; CONST's
 ;=========
@@ -71,15 +72,15 @@ TOTAL_NUM_EFFECTS	equ	17
 ;========
 RESTDEFAULT	equ	0 ; Rest uses 0 for effect
 ;========
-VOL04_CONST	equ	0 ; no effect, volume 4/15, continuous
-VOL08_CONST	equ	1 ; no effect, volume 8/15, continuous
-VOL12_CONST	equ	2 ; no effect, volume 12/15, continuous
-VOL15_CONST	equ	3 ; no effect, volume 15/15, continuous
+VOL02_CONST	equ	0 ; no effect, volume 2/15, continuous
+VOL04_CONST	equ	1 ; no effect, volume 4/15, continuous
+VOL06_CONST	equ	2 ; no effect, volume 6/15, continuous
+VOL08_CONST	equ	3 ; no effect, volume 8/15, continuous
 ;========
-VOL04REST02	equ	4 ; no effect, volume 4/15, last 2 frames rest for note separation
-VOL08REST02	equ	5 ; no effect, volume 8/15, last 2 frames rest for note separation
-VOL12REST02	equ	6 ; no effect, volume 12/15, last 2 frames rest for note separation
-VOL15REST02	equ	7 ; no effect, volume 15/15, last 2 frames rest for note separation
+VOL02REST02	equ	4 ; no effect, volume 2/15, last 2 frames rest for note separation
+VOL04REST02	equ	5 ; no effect, volume 4/15, last 2 frames rest for note separation
+VOL06REST02	equ	6 ; no effect, volume 6/15, last 2 frames rest for note separation
+VOL08REST02	equ	7 ; no effect, volume 8/15, last 2 frames rest for note separation
 ;========
 ARCH48_24FD	equ	8 ; Volume "rainbow", fade in, fade out (48 frames). Or 24 frame fade-out.
 ARCH96_72FD	equ	9 ; Volume "rainbow", fade in, fade out (96 frames). Or 72 frame fade-out.
@@ -199,7 +200,7 @@ InitializeAndSilencePokey
     SEED_POKEY Spelunker1
 	include "src/music_spelunker1.asm"
     SEED_POKEY Spelunker2
-        include "src/music_spelunker2.asm"
+	include "src/music_spelunker2.asm"
     SEED_POKEY Goonies
 	include "src/music_goonies.asm"
 
@@ -622,7 +623,7 @@ EffectsSubroutinesMSB
 Effect00
 	; Effect 00. Pure tone, no effect, volume 4 out of 15
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$04 ; faint volume, constant
+	LDA	#$02 ; faint volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -631,7 +632,7 @@ Effect00
 Effect01
 	; Effect 01. Pure tone, no effect, volume 8 out of 15
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$08 ; soft volume, constant
+	LDA	#$04 ; soft volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -640,7 +641,7 @@ Effect01
 Effect02
 	; Effect 02. Pure tone, no effect, volume 12 out of 15
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$0C ; medium volume, constant
+	LDA	#$06 ; medium volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -649,7 +650,7 @@ Effect02
 Effect03
 	; Effect 03. Pure tone, no effect, volume 15 out of 15
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$0F ; loud volume, constant
+	LDA	#$08 ; loud volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -664,7 +665,7 @@ Effect04
 	LDA	#$00
 	JMP	AfterEffectsDone
 HandleEffect04
-	LDA	#$04 ; faint volume, constant
+	LDA	#$02 ; faint volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -679,7 +680,7 @@ Effect05
 	LDA	#$00
 	JMP	AfterEffectsDone
 HandleEffect05
-	LDA	#$08 ; soft volume, constant
+	LDA	#$04 ; soft volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -694,7 +695,7 @@ Effect06
 	LDA	#$00
 	JMP	AfterEffectsDone
 HandleEffect06
-	LDA	#$0C ; medium volume, constant
+	LDA	#$06 ; medium volume, constant
 	JMP	AfterEffectsDone
 
 	;====================================
@@ -709,7 +710,7 @@ Effect07
 	LDA	#$00
 	JMP	AfterEffectsDone
 HandleEffect07
-	LDA	#$0F ; loud volume, constant
+	LDA	#$08 ; loud volume, constant
 	JMP	AfterEffectsDone
 
 	;====================
@@ -811,9 +812,9 @@ Effect13
 	LDA	PokeyInstrument1Countdown,Y
 	AND	#%00000111
 	TAX
-	LDA	Effect13TremoloTable,X
+	LDA	Effect13TremoloTable,X ; 0-4
 	CLC
-	ADC	#%00000110
+	ADC	#%00000100
 	AND	#%00001111 ; don't mess with the channel (D7-D5) nor the PCM bit (D4); just the volume bits
 	JMP	AfterEffectsDone
 
@@ -846,7 +847,7 @@ Effect15
 	LDA	AUDF2BAK,Y
 	STA	AUDF2,X
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$0C ; medium volume, constant
+	LDA	#$06 ; medium volume, constant
 	JMP	AfterEffectsDone
 
         ;======================================
@@ -866,7 +867,7 @@ Effect16
 	LDA	AUDF2BAK,Y
 	STA	AUDF2,X
 	; Continuous sound, no volume stop to make a break between notes
-	LDA	#$0C ; medium volume, constant
+	LDA	#$06 ; medium volume, constant
 	JMP	AfterEffectsDone
 
         ;=======================================
@@ -928,90 +929,90 @@ ChannelTypesPerAUDC
 
 Effect08VolumeTables
 	; This routine is best called by a note duration of "48" but can be called by 24 for a fade-out
-	dc.b	2	; 0 - 3
-	dc.b	4	; 4 - 7
-	dc.b	6	; 8 - 11
-	dc.b	8	; 12 - 15 ; 12 here
-	dc.b	10	; 16 - 19
-	dc.b	12	; 20 - 23
-	dc.b	14	; 24 - 27 ; 24 here
-	dc.b	15	; 28 - 31
-	dc.b	15	; 32 - 35
-	dc.b	14	; 36 - 39
-	dc.b	12	; 40 - 43
-	dc.b	10	; 44 - 47
-	dc.b	8	; 48 - 51 ; 48 here
-	;dc.b	6	; 52 - 55 ; - these are commented out since if we start here, we get the note way too late
-	;dc.b	4	; 56 - 59
-	;dc.b	2	; 60 - 63
+	dc.b	1	; 0 - 3
+	dc.b	2	; 4 - 7
+	dc.b	3	; 8 - 11
+	dc.b	4	; 12 - 15 ; 12 here
+	dc.b	5	; 16 - 19
+	dc.b	6	; 20 - 23
+	dc.b	7	; 24 - 27 ; 24 here
+	dc.b	8	; 28 - 31
+	dc.b	8	; 32 - 35
+	dc.b	7	; 36 - 39
+	dc.b	6	; 40 - 43
+	dc.b	5	; 44 - 47
+	dc.b	4	; 48 - 51 ; 48 here
+	;dc.b	3	; 52 - 55 ; - these are commented out since if we start here, we get the note way too late
+	;dc.b	2	; 56 - 59
+	;dc.b	1	; 60 - 63
 
 Effect09VolumeTables
 	; This routine is best called by note durations of "96", but can be used for "72" for a fade-out
-	dc.b	2	; 0 - 3
-	dc.b	4	; 4 - 7
-	dc.b	6	; 8 - 11
-	dc.b	7	; 12 - 15 ; 12 here
-	dc.b	8	; 16 - 19
-	dc.b	8	; 20 - 23
-	dc.b	9	; 24 - 27 ; 24 here
-	dc.b	9	; 28 - 31
-	dc.b	10	; 32 - 35
-	dc.b	10	; 36 - 39 ; 36 here
-	dc.b	11	; 40 - 43
-	dc.b	11	; 44 - 47
-	dc.b	12	; 48 - 51 ; 48 here
-	dc.b	12	; 52 - 55
-	dc.b	13	; 56 - 59
-	dc.b	13	; 60 - 63 ; 60 here
-	dc.b	14	; 64 - 67
-	dc.b	14	; 68 - 71
-	dc.b	15	; 72 - 75 ; 72 here
-	dc.b	15	; 76 - 79
-	dc.b	14	; 80 - 83
-	dc.b	12	; 84 - 87 ; 84 here
-	dc.b	10	; 88 - 91
-	dc.b	8	; 92 - 95
-	dc.b	8	; 96      ; 96 here
+	dc.b	1	; 0 - 3
+	dc.b	2	; 4 - 7
+	dc.b	2	; 8 - 11
+	dc.b	3	; 12 - 15 ; 12 here
+	dc.b	3	; 16 - 19
+	dc.b	3	; 20 - 23
+	dc.b	4	; 24 - 27 ; 24 here
+	dc.b	4	; 28 - 31
+	dc.b	4	; 32 - 35
+	dc.b	5	; 36 - 39 ; 36 here
+	dc.b	5	; 40 - 43
+	dc.b	5	; 44 - 47
+	dc.b	6	; 48 - 51 ; 48 here
+	dc.b	6	; 52 - 55
+	dc.b	6	; 56 - 59
+	dc.b	7	; 60 - 63 ; 60 here
+	dc.b	7	; 64 - 67
+	dc.b	7	; 68 - 71
+	dc.b	8	; 72 - 75 ; 72 here
+	dc.b	8	; 76 - 79
+	dc.b	7	; 80 - 83
+	dc.b	6	; 84 - 87 ; 84 here
+	dc.b	5	; 88 - 91
+	dc.b	4	; 92 - 95
+	dc.b	4	; 96      ; 96 here
 
 Effect10VolumeTables
 	; This routine is best called by note durations of "12", but can be stretched to "16"
 	; note: 10,12,14,12 sounded good too
-	dc.b	4	; 0 - 3
-	dc.b	10	; 4 - 7
-	dc.b	12	; 8 - 11
-	dc.b	8	; 12 - 15 ; 12 here 
-	dc.b	8	; 16
+	dc.b	2	; 0 - 3
+	dc.b	5	; 4 - 7
+	dc.b	6	; 8 - 11
+	dc.b	4	; 12 - 15 ; 12 here 
+	dc.b	4	; 16
 
 Effect11VolumeTables
 	; This routine is best called by note durations of "24", but can be used as a fade-out for "16"
 	; note: 10,12,14,12 sounded good too
-	dc.b	4	; 0 - 3
-	dc.b	6	; 4 - 7
-	dc.b	8	; 8 - 11
-	dc.b	10	; 12 - 15
-	dc.b	14	; 16 - 20 ; 16
-	dc.b	12	; 24 - 27
-	dc.b	10	; 28 - 31
-	dc.b	8	; 32 - 35 ; 24 here
+	dc.b	2	; 0 - 3
+	dc.b	3	; 4 - 7
+	dc.b	4	; 8 - 11
+	dc.b	5	; 12 - 15
+	dc.b	7	; 16 - 20 ; 16
+	dc.b	6	; 24 - 27
+	dc.b	5	; 28 - 31
+	dc.b	4	; 32 - 35 ; 24 here
 
 Effect12VolumeTables
-	dc.b	6	; 0 - 3
-	dc.b	7	; 4 - 7
-	dc.b	8	; 8 - 11
-	dc.b	9	; 12 - 15
-	dc.b	10	; 16 - 19
-	dc.b	11	; 20 - 23
-	dc.b	12	; 24 - 27
-	dc.b	13	; 28 - 31
-	dc.b	14	; 32 - 35
-	dc.b	15	; 36 - 39
-	dc.b	15	; 40 - 43
-	dc.b	15	; 44 - 47
-	dc.b	14	; 48 - 51
-	dc.b	12	; 52 - 55
-	dc.b	10	; 56 - 59
-	dc.b	8	; 60 - 63
-	dc.b	8	; 64
+	dc.b	3	; 0 - 3
+	dc.b	3	; 4 - 7
+	dc.b	4	; 8 - 11
+	dc.b	4	; 12 - 15
+	dc.b	5	; 16 - 19
+	dc.b	5	; 20 - 23
+	dc.b	6	; 24 - 27
+	dc.b	7	; 28 - 31
+	dc.b	7	; 32 - 35
+	dc.b	8	; 36 - 39
+	dc.b	8	; 40 - 43
+	dc.b	8	; 44 - 47
+	dc.b	7	; 48 - 51
+	dc.b	6	; 52 - 55
+	dc.b	5	; 56 - 59
+	dc.b	4	; 60 - 63
+	dc.b	4	; 64
 
 Effect13TremoloTable
 	dc.b	0
@@ -1024,20 +1025,20 @@ Effect13TremoloTable
 	dc.b	1
 
 Effect14VolumeTables
+	dc.b	1
 	dc.b	3
+	dc.b	5
 	dc.b	7
-	dc.b	11
-	dc.b	15
 
 Effect17VolumeTables
 	dc.b	0
 	dc.b	0
 	dc.b	0
 	dc.b	0
+	dc.b	1
 	dc.b	3
+	dc.b	5
 	dc.b	7
-	dc.b	11
-	dc.b	15
 	; This is an extra in case our drum beats are 9.
-	dc.b	15
+	dc.b	8
 

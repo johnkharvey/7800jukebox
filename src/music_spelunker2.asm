@@ -32,8 +32,8 @@ Spelunker2Track1
 
   IF SPELUNKER2_PLAY_PHRASE1
 	; Uses pokey_notes column P (green)
-	dc.b	#$37, #18, #VOL12REST02 ; B
-	dc.b	#$37, #6,  #VOL12REST02 ; B
+	dc.b	#$37, #18, #VOL06REST02 ; B
+	dc.b	#$37, #6,  #VOL06REST02 ; B
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$4A, #12, #ARCH12_16EX ; F#
 	dc.b	#$3E, #12, #ARCH12_16EX ; A
@@ -54,8 +54,8 @@ Spelunker2Track1
   IF SPELUNKER2_PLAY_PHRASE2
 	; repeat
 	; Uses pokey_notes column P (green)
-	dc.b	#$37, #18, #VOL12REST02 ; B
-	dc.b	#$37, #6,  #VOL12REST02 ; B
+	dc.b	#$37, #18, #VOL06REST02 ; B
+	dc.b	#$37, #6,  #VOL06REST02 ; B
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$4A, #12, #ARCH12_16EX ; F#
 	dc.b	#$3E, #12, #ARCH12_16EX ; A
@@ -97,8 +97,8 @@ Spelunker2Track1
   IF SPELUNKER2_PLAY_PHRASE4
 	; and repeat again
 	; Uses pokey_notes column P (green)
-	dc.b	#$37, #18, #VOL12REST02 ; B
-	dc.b	#$37, #6,  #VOL12REST02 ; B
+	dc.b	#$37, #18, #VOL06REST02 ; B
+	dc.b	#$37, #6,  #VOL06REST02 ; B
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$4A, #12, #ARCH12_16EX ; F#
 	dc.b	#$3E, #12, #ARCH12_16EX ; A
@@ -171,129 +171,129 @@ Spelunker2Track2
 
   IF SPELUNKER2_PLAY_PHRASE1
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$46, #24, #VOL12REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$46, #24, #VOL06REST02 ; A
   ENDIF
 
   IF SPELUNKER2_PLAY_PHRASE2
 	; repeat original track
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$46, #24, #VOL12REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$46, #24, #VOL06REST02 ; A
   ENDIF
 
   IF SPELUNKER2_PLAY_PHRASE3
 	; change up
 	; Uses pokey_notes column H (brown)
-	dc.b	#$5E, #18, #VOL12REST02 ; E 
-	dc.b	#$5E, #6,  #VOL12REST02 ; E
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$4F, #12, #VOL12REST02 ; G (F double-sharp)
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$46, #12, #VOL12REST02 ; A (G double-sharp)
-	dc.b	#$42, #12, #VOL12REST02 ; A#
+	dc.b	#$5E, #18, #VOL06REST02 ; E 
+	dc.b	#$5E, #6,  #VOL06REST02 ; E
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$4F, #12, #VOL06REST02 ; G (F double-sharp)
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$46, #12, #VOL06REST02 ; A (G double-sharp)
+	dc.b	#$42, #12, #VOL06REST02 ; A#
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$5E, #18, #VOL12REST02 ; E
-	dc.b	#$5E, #6,  #VOL12REST02 ; E
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
+	dc.b	#$5E, #18, #VOL06REST02 ; E
+	dc.b	#$5E, #6,  #VOL06REST02 ; E
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
   ENDIF
 
   IF SPELUNKER2_PLAY_PHRASE4
 	; repeat original track
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$7E, #6,  #VOL12REST02 ; B
-	dc.b	#$3F, #12, #VOL12REST02 ; B
-	dc.b	#$54, #12, #VOL12REST02 ; F#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$7E, #6,  #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$54, #12, #VOL06REST02 ; F#
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$46, #24, #VOL12REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$46, #24, #VOL06REST02 ; A
   ENDIF
 
   IF SPELUNKER2_PLAY_PHRASE5
 	; CODA
 	; Uses pokey_notes column H (brown)
-	dc.b	#$9F, #18, #VOL12REST02 ; G
-	dc.b	#$6A, #6,  #VOL12REST02 ; D
+	dc.b	#$9F, #18, #VOL06REST02 ; G
+	dc.b	#$6A, #6,  #VOL06REST02 ; D
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #24, #VOL12REST02 ; G
-	dc.b	#$7E, #12, #VOL12REST02 ; B
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$4F, #12, #VOL12REST02 ; G
+	dc.b	#$4F, #24, #VOL06REST02 ; G
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$4F, #12, #VOL06REST02 ; G
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$8E, #18, #VOL12REST02 ; A
-	dc.b	#$5E, #6,  #VOL12REST02 ; E
+	dc.b	#$8E, #18, #VOL06REST02 ; A
+	dc.b	#$5E, #6,  #VOL06REST02 ; E
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL12REST02 ; A
-	dc.b	#$70, #12, #VOL12REST02 ; C#
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$46, #12, #VOL12REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; A
+	dc.b	#$70, #12, #VOL06REST02 ; C#
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$46, #12, #VOL06REST02 ; A
   ENDIF
 
   IF SPELUNKER2_PLAY_PHRASE6
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #18, #VOL12REST02 ; B
-	dc.b	#$54, #6,  #VOL12REST02 ; F#
+	dc.b	#$7E, #18, #VOL06REST02 ; B
+	dc.b	#$54, #6,  #VOL06REST02 ; F#
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$3F, #24, #VOL12REST02 ; B
-	dc.b	#$64, #12, #VOL12REST02 ; D#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$3F, #12, #VOL12REST02 ; B
+	dc.b	#$3F, #24, #VOL06REST02 ; B
+	dc.b	#$64, #12, #VOL06REST02 ; D#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #12, #VOL12REST02 ; F#
-	dc.b	#$4B, #12, #VOL12REST02 ; G#
-	dc.b	#$54, #24, #VOL12REST02 ; F#
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #12, #VOL06REST02 ; F#
+	dc.b	#$4B, #12, #VOL06REST02 ; G#
+	dc.b	#$54, #24, #VOL06REST02 ; F#
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
   ENDIF
 

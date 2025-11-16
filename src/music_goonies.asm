@@ -86,170 +86,170 @@ GooniesTrack1Restart
 	; "Here we are hanging"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$4F, #12, #VOL12REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #12, #VOL06REST02 ; F
 
 	; "onto strains of greens and blues"
         ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$46, #6,  #VOL12REST02 ; G
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$46, #6,  #VOL06REST02 ; G
 	dc.b	#$3E, #78, #TREMOLOLONG ; A - tremolo
-	dc.b	#$6A, #12, #VOL12REST02 ; C
-	dc.b	#$5E, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; C
+	dc.b	#$5E, #12, #VOL06REST02 ; D
 
 	; (instrumental)
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
 
 	; "Break the chain and"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "we break down"
         ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
 	; "but it's not real if you don't feel it"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "Unspoken"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "expectations"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
 	; "Ideas you"
         ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
       ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL12REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
 	; Used to play with"
        ; Uses pokey_notes column P (green)
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$5E, #24, #VOL12REST02 ; D
-	dc.b	#$64, #24, #VOL12REST02 ; C#
-	dc.b	#$5E, #24, #VOL12REST02 ; D
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$5E, #24, #VOL06REST02 ; D
+	dc.b	#$64, #24, #VOL06REST02 ; C#
+	dc.b	#$5E, #24, #VOL06REST02 ; D
 
 	; They've finally"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "taken shape now"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
 
 	; "Good enough"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #18, #VOL12REST02 ; A
-	dc.b	#$3E, #6,  #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$4F, #18, #VOL08REST02 ; F
-	dc.b	#$4F, #6,  #VOL08REST02 ; F
+	dc.b	#$3E, #18, #VOL06REST02 ; A
+	dc.b	#$3E, #6,  #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #18, #VOL04REST02 ; F
+	dc.b	#$4F, #6,  #VOL04REST02 ; F
 
 	; "for you it's"
        ; Uses pokey_notes column P (green)
-	dc.b	#$4F, #24, #VOL08REST02 ; F
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "Good enough"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #18, #VOL12REST02 ; A
-	dc.b	#$3E, #6,  #VOL12REST02 ; A
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$3E, #6,  #VOL08REST02 ; A
-	dc.b	#$46, #6,  #VOL08REST02 ; G
+	dc.b	#$3E, #18, #VOL06REST02 ; A
+	dc.b	#$3E, #6,  #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #6,  #VOL04REST02 ; A
+	dc.b	#$46, #6,  #VOL04REST02 ; G
 
 	; "For me it's good enough"
        ; Uses pokey_notes column P (green)
-	dc.b	#$4F, #24, #VOL08REST02 ; F
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$39, #36, #VOL12REST02 ; Bb
-	dc.b	#$33, #6,  #VOL12REST02 ; C
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$39, #36, #VOL06REST02 ; Bb
+	dc.b	#$33, #6,  #VOL06REST02 ; C
 	dc.b	#$2D, #42, #TREMOLOLONG ; D - tremolo
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$33, #48, #TREMOLOLONG ; C - tremolo
 
 	; It's good enough for me"
 	; page 3 - https://www.youtube.com/watch?v=o3X_mM3Yc_g
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$33, #12, #VOL12REST02 ; C
-	dc.b	#$33, #12, #VOL12REST02 ; C
-	dc.b	#$33, #24, #VOL12REST02 ; C
-	dc.b	#$33, #24, #VOL12REST02 ; C
-	dc.b	#$2D, #12, #VOL12REST02 ; D 
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #24, #VOL06REST02 ; C
+	dc.b	#$33, #24, #VOL06REST02 ; C
+	dc.b	#$2D, #12, #VOL06REST02 ; D 
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$2D, #12, #VOL12REST02 ; D
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$2D, #12, #VOL06REST02 ; D
 
 	; "Yeah, yeah, yeah, yeah, yeah"
        ; Uses pokey_notes column P (green)
-	dc.b	#$25, #18, #VOL12REST02 ; F
-	dc.b	#$28, #18, #VOL12REST02 ; E
-	dc.b	#$2D, #12, #VOL12REST02 ; D
-	dc.b	#$33, #24, #VOL12REST02 ; C
-	dc.b	#$33, #6,  #VOL12REST02 ; C
-	dc.b	#$2D, #18, #VOL12REST02 ; D
+	dc.b	#$25, #18, #VOL06REST02 ; F
+	dc.b	#$28, #18, #VOL06REST02 ; E
+	dc.b	#$2D, #12, #VOL06REST02 ; D
+	dc.b	#$33, #24, #VOL06REST02 ; C
+	dc.b	#$33, #6,  #VOL06REST02 ; C
+	dc.b	#$2D, #18, #VOL06REST02 ; D
 
 	dc.b	#$FF
 	dc.b	#<GooniesTrack1Restart
@@ -274,308 +274,308 @@ GooniesTrack2
 	dc.b	#>GooniesTrack2
   ELSE
 	; Uses pokey_notes column H (brown)
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
-	dc.b	#$34, #12, #VOL12REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$34, #12, #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$59, #6,  #VOL12REST02 ; F
-	dc.b	#$70, #6,  #VOL12REST02 ; C#
-	dc.b	#$9F, #12, #VOL12REST02 ; G
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$59, #6,  #VOL06REST02 ; F
+	dc.b	#$70, #6,  #VOL06REST02 ; C#
+	dc.b	#$9F, #12, #VOL06REST02 ; G
 
 GooniesTrack2Restart
-	dc.b	#$6A, #24, #VOL12REST02 ; D
+	dc.b	#$6A, #24, #VOL06REST02 ; D
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$6A, #36, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #36, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
-	dc.b	#$8E, #24, #VOL12REST02 ; A
-	dc.b	#$77, #24, #VOL12REST02 ; C
+	dc.b	#$8E, #24, #VOL06REST02 ; A
+	dc.b	#$77, #24, #VOL06REST02 ; C
 
-	dc.b	#$6A, #24, #VOL12REST02 ; D
+	dc.b	#$6A, #24, #VOL06REST02 ; D
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$6A, #36, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #36, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
-	dc.b	#$8E, #24, #VOL12REST02 ; A
-	dc.b	#$77, #24, #VOL12REST02 ; C
+	dc.b	#$8E, #24, #VOL06REST02 ; A
+	dc.b	#$77, #24, #VOL06REST02 ; C
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$4F, #12, #VOL12REST02 ; G
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D change-up
-	dc.b	#$46, #12, #VOL12REST02 ; A
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #12, #VOL12REST02 ; C
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D change-up
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$4F, #12, #VOL12REST02 ; G
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$4F, #12, #VOL12REST02 ; G
-	dc.b	#$77, #12, #VOL12REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$77, #12, #VOL06REST02 ; C
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$3B, #12, #VOL12REST02 ; C
-	dc.b	#$59, #12, #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$59, #12, #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$4F, #12, #VOL12REST02 ; G
-	dc.b	#$9F, #12, #VOL12REST02 ; G LOWEST
-	dc.b	#$9F, #12, #VOL12REST02 ; G
-	dc.b	#$9F, #12, #VOL12REST02 ; G
-	dc.b	#$8E, #12, #VOL12REST02 ; A
-	dc.b	#$8E, #12, #VOL12REST02 ; A
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$77, #12, #VOL12REST02 ; C
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$9F, #12, #VOL06REST02 ; G LOWEST
+	dc.b	#$9F, #12, #VOL06REST02 ; G
+	dc.b	#$9F, #12, #VOL06REST02 ; G
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$77, #12, #VOL06REST02 ; C
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$4F, #12, #VOL12REST02 ; G
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; E
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; E
 
 	; Another change up - fast notes
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
-	dc.b	#$2C, #6,  #VOL12REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
+	dc.b	#$2C, #6,  #VOL06REST02 ; F
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
-	dc.b	#$34, #6,  #VOL12REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
+	dc.b	#$34, #6,  #VOL06REST02 ; D
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$86, #12, #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
-	dc.b	#$42, #6,  #VOL12REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$86, #12, #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
+	dc.b	#$42, #6,  #VOL06REST02 ; Bb
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
-	dc.b	#$3B, #6,  #VOL12REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
+	dc.b	#$3B, #6,  #VOL06REST02 ; C
 
 	; Another change up
 	; Uses pokey_notes column H (brown)
-	dc.b	#$8E, #18, #VOL12REST02 ; A
-	dc.b	#$8E, #6,  #VOL12REST02 ; A
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$46, #12, #VOL12REST02 ; A
+	dc.b	#$8E, #18, #VOL06REST02 ; A
+	dc.b	#$8E, #6,  #VOL06REST02 ; A
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$46, #12, #VOL06REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$8E, #12, #VOL12REST02 ; A
-	dc.b	#$5E, #12, #VOL12REST02 ; E
-	dc.b	#$46, #12, #VOL12REST02 ; A
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$5E, #12, #VOL06REST02 ; E
+	dc.b	#$46, #12, #VOL06REST02 ; A
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$86, #18, #VOL12REST02 ; Bb
-	dc.b	#$86, #6,  #VOL12REST02 ; Bb
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$59, #12, #VOL12REST02 ; F
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$77, #12, #VOL12REST02 ; C
-	dc.b	#$6A, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; E
+	dc.b	#$86, #18, #VOL06REST02 ; Bb
+	dc.b	#$86, #6,  #VOL06REST02 ; Bb
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; E
 
 	dc.b	#$FF
 	dc.b	#<GooniesTrack2Restart
@@ -683,174 +683,174 @@ GooniesTrack3Restart
         ; "Here we are hanging"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$4F, #12, #VOL12REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #12, #VOL06REST02 ; F
 
         ; "onto strains of greens and blues"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #06, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$6A, #6,  #VOL12REST02 ; C
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$6A, #6,  #VOL06REST02 ; C
 	dc.b	#$5E, #72, #TREMOLOLONG ; D - tremolo
-	dc.b	#$8F, #12, #VOL12REST02 ; G
-	dc.b	#$7F, #12, #VOL12REST02 ; A
+	dc.b	#$8F, #12, #VOL06REST02 ; G
+	dc.b	#$7F, #12, #VOL06REST02 ; A
 
         ; (instrumental)
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$4F, #12, #VOL12REST02 ; F
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$4F, #12, #VOL12REST02 ; F
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; F
 
         ; "Break the chain and"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$3E, #12, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
         ; "we break down"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #6,  #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #18, #VOL12REST02 ; F
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #18, #VOL06REST02 ; F
 
         ; "but it's not real if you don't feel it"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$6A, #24, #VOL12REST02 ; C
-	dc.b	#$6A, #12, #VOL12REST02 ; C
-	dc.b	#$5E, #24, #VOL12REST02 ; D
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$6A, #24, #VOL06REST02 ; C
+	dc.b	#$6A, #12, #VOL06REST02 ; C
+	dc.b	#$5E, #24, #VOL06REST02 ; D
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
         ; "Unspoken"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 
         ; "expectations"
        ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$3E, #24, #VOL12REST02 ; A
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
         ; "Ideas you"
         ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
       ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL12REST02 ; A
+	dc.b	#$3E, #12, #VOL06REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$3E, #24, #VOL12REST02 ; A
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$3E, #24, #VOL06REST02 ; A
 
         ; Used to play with"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
         ; They've finally"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
 
         ; "taken shape now"
        ; Uses pokey_notes column P (green)
-	dc.b	#$33, #12, #VOL12REST02 ; C
+	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL12REST02 ; Bb
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$53, #24, #VOL12REST02 ; E
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$6A, #12, #VOL12REST02 ; C
+	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$53, #24, #VOL06REST02 ; E
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL06REST02 ; C
 
         ; "Good enough"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$4F, #18, #VOL12REST02 ; F
-	dc.b	#$4F, #6,  #VOL12REST02 ; F
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$6A, #18, #VOL08REST02 ; C
-	dc.b	#$6A, #6,  #VOL08REST02 ; C
+	dc.b	#$4F, #18, #VOL06REST02 ; F
+	dc.b	#$4F, #6,  #VOL06REST02 ; F
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$6A, #18, #VOL04REST02 ; C
+	dc.b	#$6A, #6,  #VOL04REST02 ; C
 
         ; "for you it's"
        ; Uses pokey_notes column P (green)
-	dc.b	#$6A, #24, #VOL08REST02 ; C
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$4F, #24, #VOL12REST02 ; F
+	dc.b	#$6A, #24, #VOL04REST02 ; C
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$4F, #24, #VOL06REST02 ; F
 
         ; "Good enough"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$5E, #18, #VOL12REST02 ; D
-	dc.b	#$5E, #6,  #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$5E, #12, #VOL12REST02 ; D
-	dc.b	#$4F, #6,  #VOL08REST02 ; F
-	dc.b	#$53, #6,  #VOL08REST02 ; E
+	dc.b	#$5E, #18, #VOL06REST02 ; D
+	dc.b	#$5E, #6,  #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$4F, #6,  #VOL04REST02 ; F
+	dc.b	#$53, #6,  #VOL04REST02 ; E
 
         ; "For me it's good enough"
        ; Uses pokey_notes column P (green)
-	dc.b	#$5E, #24, #VOL08REST02 ; D
-	dc.b	#$4F, #24, #VOL12REST02 ; F
-	dc.b	#$4F, #36, #VOL12REST02 ; F
-	dc.b	#$46, #6,  #VOL12REST02 ; G
+	dc.b	#$5E, #24, #VOL04REST02 ; D
+	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$4F, #36, #VOL06REST02 ; F
+	dc.b	#$46, #6,  #VOL06REST02 ; G
 	dc.b	#$3E, #42, #TREMOLOLONG ; A - tremolo
-	dc.b	#$46, #12, #VOL12REST02 ; G
+	dc.b	#$46, #12, #VOL06REST02 ; G
 	dc.b	#$46, #48, #TREMOLOLONG ; G - tremolo
 
         ; It's good enough for me"
         ; page 3 - https://www.youtube.com/watch?v=o3X_mM3Yc_g
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$46, #12, #VOL12REST02 ; G
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$46, #24, #VOL12REST02 ; G
-	dc.b	#$3E, #12, #VOL12REST02 ; A
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$46, #12, #VOL06REST02 ; G
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$46, #24, #VOL06REST02 ; G
+	dc.b	#$3E, #12, #VOL06REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$6A, #12, #VOL12REST02 ; C
-	dc.b	#$53, #12, #VOL12REST02 ; E
-	dc.b	#$3E, #12, #VOL12REST02 ; A
+	dc.b	#$6A, #12, #VOL06REST02 ; C
+	dc.b	#$53, #12, #VOL06REST02 ; E
+	dc.b	#$3E, #12, #VOL06REST02 ; A
 
         ; "Yeah, yeah, yeah, yeah, yeah"
        ; Uses pokey_notes column P (green)
-	dc.b	#$25, #18, #VOL12REST02 ; F
-	dc.b	#$28, #18, #VOL12REST02 ; E
-	dc.b	#$2D, #12, #VOL12REST02 ; D
-	dc.b	#$33, #24, #VOL12REST02 ; C
-	dc.b	#$33, #6,  #VOL12REST02 ; C
-	dc.b	#$2D, #18, #VOL12REST02 ; D
+	dc.b	#$25, #18, #VOL06REST02 ; F
+	dc.b	#$28, #18, #VOL06REST02 ; E
+	dc.b	#$2D, #12, #VOL06REST02 ; D
+	dc.b	#$33, #24, #VOL06REST02 ; C
+	dc.b	#$33, #6,  #VOL06REST02 ; C
+	dc.b	#$2D, #18, #VOL06REST02 ; D
 
 	dc.b	#$FF
 	dc.b	#<GooniesTrack3Restart
