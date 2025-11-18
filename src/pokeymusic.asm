@@ -201,6 +201,8 @@ InitializeAndSilencePokey
 	include "src/music_spelunker1.asm"
     SEED_POKEY Spelunker2
 	include "src/music_spelunker2.asm"
+    SEED_POKEY Spelunker10
+	include "src/music_spelunker10.asm"
     SEED_POKEY Goonies
 	include "src/music_goonies.asm"
 
