@@ -139,8 +139,13 @@ Spelunker10Track3
         dc.b    #$7F, #24, #ARCH24_16FD ; A
         dc.b    #$7F, #24, #ARCH24_16FD ; A
 
-        dc.b    #$71, #96, #ARCH96_72FD ; B
-        dc.b    #$00, #48, #RESTDEFAULT ; B
+        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$71, #24, #ARCH24_16FD ; B
+
+        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$00, #24, #RESTDEFAULT ; B
 
 
 Spelunker10Track3Stops
