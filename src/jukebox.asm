@@ -115,7 +115,7 @@ PALETTE5		equ	#%00000101
 PALETTE6		equ	#%00000110
 PALETTE7		equ	#%00000111
 
-NUMBER_OF_SONGS		equ	3
+NUMBER_OF_SONGS		equ	4
 
 ;################################################################
 ; Let's define macros here
@@ -715,6 +715,8 @@ DrawScreen
 	BEQ	TextIndexOne
 	CMP	#2
 	BEQ	TextIndexTwo
+	CMP	#3
+	BEQ	TextIndexThree
 	; fall-through
 	JMP	TextIndexPressUpOrDown
 TextIndexZero
@@ -726,6 +728,10 @@ TextIndexOne
 	STA	DLL_On_Screen+32
 	JMP	AfterText
 TextIndexTwo
+	LDA	#<DL_Spelunker10
+	STA	DLL_On_Screen+32
+	JMP	AfterText
+TextIndexThree
 	LDA	#<DL_Goonies
 	STA	DLL_On_Screen+32
 	JMP	AfterText
@@ -745,11 +751,13 @@ callJumpTableSubroutine:
 PlaylistMSB
 	dc.b	#>SeedPokeyForSpelunker1
 	dc.b	#>SeedPokeyForSpelunker2
+	dc.b	#>SeedPokeyForSpelunker10
 	dc.b	#>SeedPokeyForGoonies
 
 PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker1
 	dc.b	#<SeedPokeyForSpelunker2
+	dc.b	#<SeedPokeyForSpelunker10
 	dc.b	#<SeedPokeyForGoonies
 
 ;################################################################
@@ -769,6 +777,9 @@ CHMAP_Spelunker1
 
 CHMAP_Spelunker2
    STR_LEN "Spelunker 2", CHMAP_Spelunker2
+
+CHMAP_Spelunker10
+   STR_LEN "Spelunker 10", CHMAP_Spelunker10
 
 CHMAP_Goonies
    STR_LEN "Goonies", CHMAP_Goonies
@@ -813,6 +824,14 @@ DL_Spelunker2
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
 	dc.b	>CHMAP_RAM_Start
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker2
+	dc.b	50 ; HPos (0-159)
+	dc.b	$00,$00
+
+DL_Spelunker10
+	dc.b	<CHMAP_Spelunker10
+	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
+	dc.b	>CHMAP_RAM_Start
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker10
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
