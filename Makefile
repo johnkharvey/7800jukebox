@@ -1,4 +1,4 @@
-# Makefile for "Get Lost"
+# Makefile for "Jukebox 7800"
 
 
 #==================

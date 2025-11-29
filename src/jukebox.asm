@@ -504,7 +504,7 @@ Copy_CHMAPs_Loop:
 Copy_DLs:
 	LDX	#$00
 Copy_DLs_Loop:
-	LDA	$e100,X
+	LDA	$E100,X
 	STA	$1900,X
 	INX
 	BNE	Copy_DLs_Loop
@@ -796,7 +796,7 @@ CHMAP_Jukebox
 ; The DL starts here - $1900 in RAM
 ;===================================
 
-	ORG	$e100
+	ORG	$E100
 
 DL_Empty
 	dc.b	$00,$00
@@ -861,11 +861,21 @@ DL_Jukebox
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
+;=============================
+
+DL_ScreenLine1
+        dc.b    <ScreenLine1
+	dc.b	PALETTE0+%00000001 ; D7/6/5 = pallete (7), D4/3/2/1/0 = 2's complement of width. 31 = 
+        dc.b    >ScreenLine1
+        dc.b    18 ; HPos (0-159)
+	; End of line
+	dc.b    $00,$00
+
 ;=====================================
 ; The DLL starts here - $1A00 in RAM
 ;=====================================
 
-	ORG	$e200
+	ORG	$E200
 
 DLL_PAL:
 	dc.b	$00, >DL_Empty, <DL_Empty	; 25 extra blank lines for PAL
@@ -889,8 +899,10 @@ DLL_On_Screen	equ	Code_DLL_On_Screen - DLL_PAL + DLLRam
 
 	dc.b	$07, >DL_RAM_Start, <DL_Space	; [8] blank
 	dc.b	$07, >DL_RAM_Start, <DL_Space	; [16] blank
-	dc.b	$07, >DL_RAM_Start, <DL_Space	; [24] blank
-	dc.b	$07, >DL_RAM_Start, <DL_Space	; [32] blank
+	dc.b	$06, >DL_RAM_Start, <DL_Space	; [23] blank
+	dc.b	$00, >DL_ScreenLine1, <DL_ScreenLine1; [24] 
+        dc.b    $00, >DL_ScreenLine1, <DL_ScreenLine1; [25]
+	dc.b	$06, >DL_RAM_Start, <DL_Space	; [32] blank
 	dc.b	$07, >DL_RAM_Start, <DL_Space	; [40] blank
 	dc.b	$07, >DL_RAM_Start, <DL_Jukebox	; [48] DL for "Jukebox"
 	dc.b	$07, >DL_RAM_Start, <DL_Space	; [56] blank
@@ -921,6 +933,12 @@ DLL_On_Screen	equ	Code_DLL_On_Screen - DLL_PAL + DLLRam
 	dc.b	$07, >DL_Empty, <DL_Empty
 	dc.b	$07, >DL_Empty, <DL_Empty
 	dc.b	$07, >DL_Empty, <DL_Empty
+
+;================================
+
+ScreenLine1
+	dc.b	#$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55
+	dc.b	#$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55,$AA,$55
 
 ;================================
 
