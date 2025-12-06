@@ -816,7 +816,7 @@ Effect13
 	TAX
 	LDA	Effect13TremoloTable,X ; 0-4
 	CLC
-	ADC	#%00000100
+	ADC	#%00000010
 	AND	#%00001111 ; don't mess with the channel (D7-D5) nor the PCM bit (D4); just the volume bits
 	JMP	AfterEffectsDone
 
