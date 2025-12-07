@@ -125,8 +125,8 @@ Spelunker2Track1
 
 	; Uses pokey_notes column P (green)
 	dc.b	#$2F, #18, #ARCH48_24FD ; C#
-	dc.b	#$37, #12, #ARCH48_24FD ; B
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#$37, #9,  #ARCH12_16EX ; B
+	dc.b	#$00, #9,  #RESTDEFAULT ; rest
 	dc.b	#$3E, #60, #TREMOLOLONG ; A - tremolo
   ENDIF
 
