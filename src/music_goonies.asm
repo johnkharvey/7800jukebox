@@ -1,9 +1,9 @@
-WATER_PLAY_PHRASE1	set	1
-WATER_PLAY_PHRASE2	set	1
-WATER_PLAY_PHRASE3	set	1
-WATER_PLAY_PHRASE4	set	1
-WATER_PLAY_PHRASE5	set	1
-WATER_PLAY_PHRASE6	set	1
+GOONIES_PLAY_PHRASE1	set	1
+GOONIES_PLAY_PHRASE2	set	1
+GOONIES_PLAY_PHRASE3	set	1
+GOONIES_PLAY_PHRASE4	set	1
+GOONIES_PLAY_PHRASE5	set	1
+GOONIES_PLAY_PHRASE6	set	1
 MUTE_TRACK1		set	0
 MUTE_TRACK2		set	0
 MUTE_TRACK3		set	0
@@ -86,109 +86,109 @@ GooniesTrack1Restart
 	; "Here we are hanging"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #24, #TREMOLOLONG ; A
+	dc.b	#$4F, #12, #TREMOLOLONG ; F
+	dc.b	#$3E, #24, #TREMOLOLONG ; A
+	dc.b	#$4F, #12, #TREMOLOLONG ; F
 
 	; "onto strains of greens and blues"
         ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$46, #6,  #VOL06REST02 ; G
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$46, #6,  #VOL04REST02 ; G
 	dc.b	#$3E, #78, #TREMOLOLONG ; A - tremolo
-	dc.b	#$6A, #12, #VOL06REST02 ; C
-	dc.b	#$5E, #12, #VOL06REST02 ; D
+	dc.b	#$6A, #12, #VOL04REST02 ; C
+	dc.b	#$5E, #12, #VOL04REST02 ; D
 
 	; (instrumental)
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$53, #12, #VOL06REST02 ; E
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$46, #12, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$53, #12, #VOL04REST02 ; E
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$46, #12, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
 
 	; "Break the chain and"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL06REST02 ; A
-	dc.b	#$3E, #12, #VOL06REST02 ; A
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #TREMOLOLONG ; A
+	dc.b	#$3E, #12, #TREMOLOLONG ; A
+	dc.b	#$3E, #24, #TREMOLOLONG ; A
+	dc.b	#$3E, #24, #TREMOLOLONG ; A
 
 	; "we break down"
         ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; "but it's not real if you don't feel it"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$46, #12, #VOL06REST02 ; G
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$53, #12, #VOL06REST02 ; E
-	dc.b	#$4F, #24, #VOL06REST02 ; F
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$46, #12, #VOL04REST02 ; G
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$53, #12, #VOL04REST02 ; E
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "Unspoken"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "expectations"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #24, #VOL06REST02 ; F
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; "Ideas you"
         ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
       ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; Used to play with"
        ; Uses pokey_notes column P (green)
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$5E, #24, #VOL06REST02 ; D
-	dc.b	#$64, #24, #VOL06REST02 ; C#
-	dc.b	#$5E, #24, #VOL06REST02 ; D
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$5E, #24, #VOL04REST02 ; D
+	dc.b	#$64, #24, #VOL04REST02 ; C#
+	dc.b	#$5E, #24, #VOL04REST02 ; D
 
 	; They've finally"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "taken shape now"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$3E, #12, #VOL06REST02 ; A
-	dc.b	#$46, #12, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$3E, #12, #VOL04REST02 ; A
+	dc.b	#$46, #12, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
 
 	; "Good enough"
        ; Uses pokey_notes column P (green)
@@ -683,113 +683,113 @@ GooniesTrack3Restart
         ; "Here we are hanging"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$4F, #12, #VOL04REST02 ; F
 
         ; "onto strains of greens and blues"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #06, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$6A, #6,  #VOL06REST02 ; C
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$6A, #6,  #VOL04REST02 ; C
 	dc.b	#$5E, #72, #TREMOLOLONG ; D - tremolo
-	dc.b	#$8F, #12, #VOL06REST02 ; G
-	dc.b	#$7F, #12, #VOL06REST02 ; A
+	dc.b	#$8F, #12, #VOL04REST02 ; G
+	dc.b	#$7F, #12, #VOL04REST02 ; A
 
         ; (instrumental)
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$53, #12, #VOL06REST02 ; E
-	dc.b	#$4F, #12, #VOL06REST02 ; F
-	dc.b	#$46, #12, #VOL06REST02 ; G
-	dc.b	#$4F, #12, #VOL06REST02 ; F
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$53, #12, #VOL04REST02 ; E
+	dc.b	#$4F, #12, #VOL04REST02 ; F
+	dc.b	#$46, #12, #VOL04REST02 ; G
+	dc.b	#$4F, #12, #VOL04REST02 ; F
 
         ; "Break the chain and"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL06REST02 ; A
-	dc.b	#$3E, #12, #VOL06REST02 ; A
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL04REST02 ; A
+	dc.b	#$3E, #12, #VOL04REST02 ; A
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
         ; "we break down"
         ; Uses pokey_notes column P (green)
 	dc.b	#$00, #6,  #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #18, #VOL06REST02 ; F
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #18, #VOL04REST02 ; F
 
         ; "but it's not real if you don't feel it"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$53, #12, #VOL06REST02 ; E
-	dc.b	#$4F, #24, #VOL06REST02 ; F
-	dc.b	#$6A, #24, #VOL06REST02 ; C
-	dc.b	#$6A, #12, #VOL06REST02 ; C
-	dc.b	#$5E, #24, #VOL06REST02 ; D
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$53, #12, #VOL04REST02 ; E
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$6A, #24, #VOL04REST02 ; C
+	dc.b	#$6A, #12, #VOL04REST02 ; C
+	dc.b	#$5E, #24, #VOL04REST02 ; D
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$4F, #24, #VOL04REST02 ; F
 
         ; "Unspoken"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 
         ; "expectations"
        ; Uses pokey_notes column P (green)
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$3E, #24, #VOL06REST02 ; A
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$3E, #24, #VOL04REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
         ; "Ideas you"
         ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
       ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$3E, #12, #VOL06REST02 ; A
+	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$3E, #24, #VOL06REST02 ; A
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$3E, #24, #VOL04REST02 ; A
 
         ; Used to play with"
        ; Uses pokey_notes column P (green)
-	dc.b	#$46, #24, #VOL06REST02 ; G
-	dc.b	#$4F, #24, #VOL06REST02 ; F
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$4F, #24, #VOL06REST02 ; F
+	dc.b	#$46, #24, #VOL04REST02 ; G
+	dc.b	#$4F, #24, #VOL04REST02 ; F
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$4F, #24, #VOL04REST02 ; F
 
         ; They've finally"
        ; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
-	dc.b	#$33, #12, #VOL06REST02 ; C
+	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
 
         ; "taken shape now"
        ; Uses pokey_notes column P (green)
 	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$39, #24, #VOL06REST02 ; Bb
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$53, #24, #VOL06REST02 ; E
-	dc.b	#$53, #12, #VOL06REST02 ; E
-	dc.b	#$5E, #12, #VOL06REST02 ; D
-	dc.b	#$6A, #12, #VOL06REST02 ; C
+	dc.b	#$39, #24, #VOL04REST02 ; Bb
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$53, #24, #VOL04REST02 ; E
+	dc.b	#$53, #12, #VOL04REST02 ; E
+	dc.b	#$5E, #12, #VOL04REST02 ; D
+	dc.b	#$6A, #12, #VOL04REST02 ; C
 
         ; "Good enough"
        ; Uses pokey_notes column P (green)
