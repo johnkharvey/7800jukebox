@@ -138,7 +138,7 @@ STR_LEN_{2} = . - .start
 
 ;################################################################
 ; Graphics data for 128 characters
-	ORG	$8000
+	ORG	$C000
 ;################################################################
 
 ; graphics data for 128 characters - line 8
@@ -294,7 +294,7 @@ STR_LEN_{2} = . - .start
 
 ;################################################################
 ; Other data
-	ORG	$8780
+	ORG	$C780
 ;################################################################
 
 ;################################################################
@@ -340,7 +340,7 @@ START:
 	STA	BACKGRND
 	STA	INPTCTRL	; not really nessessary but the
 	STA	OFFSET		; manual suggests it anyway
-	LDA	#$80		; the font data is located at $8000
+	LDA	#$C0		; the font data is located at $C000
 	STA	CHBASE
 	;=======================================
 
@@ -428,7 +428,7 @@ RamCleanupLoop3
 	STA	P0C3
 	LDA	#$0F		; we're going to immediately overwrite this down below, but this is a dummy check
 	STA	BACKGRND
-	LDA	#$80		; the font data is located at $8000
+	LDA	#$C0		; the font data is located at $C000
 	STA	CHBASE
 
 Initialization
