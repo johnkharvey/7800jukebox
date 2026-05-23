@@ -25,7 +25,6 @@ Spelunker10Track1
   ELSE
 
 	; Uses pokey_notes column P (green)
-	;dc.b	#$58, #18, #ARCH48_24FD ; D#
 
 	dc.b	#$53, #12, #ARCH12_16EX ; E
 	dc.b	#$71, #12, #ARCH12_16EX ; B
@@ -119,33 +118,33 @@ Spelunker10Track3
   ELSE
 
 	; Uses pokey_notes column P (green)
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
 
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$8F, #24, #ARCH24_16FD ; G
-        dc.b    #$8F, #24, #ARCH24_16FD ; G
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
-        dc.b    #$7F, #24, #ARCH24_16FD ; A
+        dc.b    #$D8, #24, #ARCH24_16FD ; C
+        dc.b    #$D8, #24, #ARCH24_16FD ; C
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
+        dc.b    #$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$71, #24, #ARCH24_16FD ; B
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
 
-        dc.b    #$71, #24, #ARCH24_16FD ; B
-        dc.b    #$00, #24, #RESTDEFAULT ; B
+        dc.b    #$AB, #24, #ARCH24_16FD ; E
+        dc.b    #$00, #24, #RESTDEFAULT ; rest
 
 
 Spelunker10Track3Stops
