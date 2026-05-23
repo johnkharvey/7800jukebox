@@ -56,11 +56,9 @@ Spelunker9Track1
         dc.b    #$2D, #6,  #VOL04_CONST ; D
         dc.b    #$39, #18, #VOL04_CONST ; A#
 
-Spelunker9Track1Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker9Track1Stops
-	dc.b	#>Spelunker9Track1Stops
+	dc.b	#<Spelunker9Track1
+	dc.b	#>Spelunker9Track1
 
   ENDIF ; (IF MUTE_TRACK1)
 
@@ -112,11 +110,9 @@ Spelunker9Track2
         dc.b    #$2C, #6,  #VOL04_CONST ; F
         dc.b    #$00, #18, #RESTDEFAULT ; rest
 
-Spelunker9Track2Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker9Track2Stops
-	dc.b	#>Spelunker9Track2Stops
+	dc.b	#<Spelunker9Track2
+	dc.b	#>Spelunker9Track2
 
   ENDIF ; (IF MUTE_TRACK2)
 
@@ -168,11 +164,9 @@ Spelunker9Track3
         dc.b    #$A1, #6,  #VOL04_CONST ; F
         dc.b    #$00, #18, #RESTDEFAULT ; rest
 
-Spelunker9Track3Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker9Track3Stops
-	dc.b	#>Spelunker9Track3Stops
+	dc.b	#<Spelunker9Track3
+	dc.b	#>Spelunker9Track3
   ENDIF ; (IF MUTE_TRACK3)
 
 ;================
@@ -190,11 +184,10 @@ Spelunker9Track4
   ELSE
 
 	; This track has no music
-Spelunker9Track4Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker9Track4Stops
-	dc.b	#>Spelunker9Track4Stops
+	dc.b	#<Spelunker9Track4
+	dc.b	#>Spelunker9Track4
 
   ENDIF ; (IF MUTE_TRACK4)
 

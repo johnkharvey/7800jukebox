@@ -27,11 +27,10 @@ Spelunker4Track1
 	; Uses pokey_notes column P (green)
         ;dc.b    #$7E, #144, #VOL04_CONST ; B
 
-Spelunker4Track1Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker4Track1Stops
-	dc.b	#>Spelunker4Track1Stops
+	dc.b	#<Spelunker4Track1
+	dc.b	#>Spelunker4Track1
 
   ENDIF ; (IF MUTE_TRACK1)
 
@@ -91,11 +90,9 @@ Spelunker4Track2
         dc.b    #$4F, #12, #VOL06REST02 ; G
         dc.b    #$27, #12, #VOL06REST02 ; G
 
-Spelunker4Track2Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker4Track2Stops
-	dc.b	#>Spelunker4Track2Stops
+	dc.b	#<Spelunker4Track2
+	dc.b	#>Spelunker4Track2
 
   ENDIF ; (IF MUTE_TRACK2)
 
@@ -118,11 +115,10 @@ Spelunker4Track3
 	; Uses pokey_notes column P (green)
         ;dc.b    #$71, #24, #ARCH24_16FD ; B
 
-Spelunker4Track3Stops
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker4Track3Stops
-	dc.b	#>Spelunker4Track3Stops
+	dc.b	#<Spelunker4Track3
+	dc.b	#>Spelunker4Track3
   ENDIF ; (IF MUTE_TRACK3)
 
 ;================
@@ -140,11 +136,10 @@ Spelunker4Track4
   ELSE
 
 	; This track has no music
-Spelunker4Track4Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker4Track4Stops
-	dc.b	#>Spelunker4Track4Stops
+	dc.b	#<Spelunker4Track4
+	dc.b	#>Spelunker4Track4
 
   ENDIF ; (IF MUTE_TRACK4)
 
