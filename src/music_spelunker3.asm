@@ -25,9 +25,101 @@ Spelunker3Track1
   ELSE
 
 	; Uses pokey_notes column P (green)
-        ;dc.b    #$7E, #144, #VOL04_CONST ; B
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #36, #RESTDEFAULT ; rest
+	dc.b	#$2D, #12, #ARCH12_16EX ; D
+	dc.b	#$2A, #6,  #VOL06_CONST ; D#
+	dc.b	#$28, #6,  #VOL06_CONST ; E
+	dc.b	#$21, #12, #ARCH12_16EX ; G
 
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	; Uses pokey_notes column P (green)
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #36, #RESTDEFAULT ; rest
+	dc.b	#$2D, #12, #ARCH12_16EX ; D
+	dc.b	#$2A, #6,  #VOL06_CONST ; D#
+	dc.b	#$28, #6,  #VOL06_CONST ; E
+	dc.b	#$21, #12, #ARCH12_16EX ; G
+
+	; Uses pokey_notes column P (green)
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
+	dc.b	#$13, #12, #ARCH12_16EX ; D#
+	dc.b	#$14, #12, #ARCH12_16EX ; D
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$1D, #12, #ARCH12_16EX ; A
+
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$14, #12, #ARCH12_16EX ; D
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$21, #36, #ARCH48_24FD ; G
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
+
+	;=========================================
+
+	; Uses pokey_notes column P (green)
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #36, #RESTDEFAULT ; rest
+	dc.b	#$2D, #12, #ARCH12_16EX ; D
+	dc.b	#$2A, #6,  #VOL06_CONST ; D#
+	dc.b	#$28, #6,  #VOL06_CONST ; E
+	dc.b	#$21, #12, #ARCH12_16EX ; G
+
+	; Uses pokey_notes column P (green)
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #36, #RESTDEFAULT ; rest
+	dc.b	#$2D, #12, #ARCH12_16EX ; D
+	dc.b	#$2A, #6,  #VOL06_CONST ; D#
+	dc.b	#$28, #6,  #VOL06_CONST ; E
+	dc.b	#$21, #12, #ARCH12_16EX ; G
+
+	; Uses pokey_notes column P (green)
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
+	dc.b	#$13, #12, #ARCH12_16EX ; D#
+	dc.b	#$14, #12, #ARCH12_16EX ; D
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$1D, #12, #ARCH12_16EX ; A
+
+	dc.b	#$17, #12, #ARCH12_16EX ; C
+	dc.b	#$14, #12, #ARCH12_16EX ; D
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$21, #36, #ARCH48_24FD ; G
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
+
+	;=========================================
+
+	dc.b	#$13, #12, #ARCH12_16EX ; D#
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$14, #12, #ARCH12_16EX ; D
+	dc.b	#$13, #12, #ARCH12_16EX ; D#
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$10, #12, #ARCH12_16EX ; F
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$10, #36, #ARCH48_24FD ; F
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
+	dc.b	#$21, #12, #ARCH12_16EX ; G (low)
+
+	dc.b	#$0E, #36, #ARCH48_24FD ; G
+	dc.b	#$00, #72, #RESTDEFAULT ; rest
+
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+	dc.b	#$0E, #12, #ARCH12_16EX ; G
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+
 	dc.b	#$FF
 	dc.b	#<Spelunker3Track1
 	dc.b	#>Spelunker3Track1
@@ -48,127 +140,127 @@ Spelunker3Track2
 	dc.b	#$FF
 	dc.b	#<Spelunker3Track2
 	dc.b	#>Spelunker3Track2
-   ELSE
+  ELSE
 
 	; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
-
-	;===================================
-
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
-
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
-
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
-
-        ; Uses pokey_notes column H (brown)
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$8E, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$86, #12, #VOL06REST02 ; A#
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$7E, #12, #VOL06REST02 ; B
-        dc.b    #$3F, #12, #VOL06REST02 ; B
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
 	;===================================
 
-        dc.b    #$59, #12, #VOL06REST02 ; F
-        dc.b    #$2C, #12, #VOL06REST02 ; F
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$23, #12, #VOL06REST02 ; A
-        dc.b    #$42, #12, #VOL06REST02 ; A#
-        dc.b    #$21, #12, #VOL06REST02 ; A#
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$1D, #12, #VOL06REST02 ; C
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        dc.b    #$4F, #12, #VOL06REST02 ; G
-        dc.b    #$27, #12, #VOL06REST02 ; G
-        dc.b    #$3F, #12, #VOL06REST02 ; B
-        dc.b    #$1F, #12, #VOL06REST02 ; B
-        dc.b    #$3B, #12, #VOL06REST02 ; C
-        dc.b    #$1D, #12, #VOL06REST02 ; C
-        dc.b    #$34, #12, #VOL06REST02 ; D
-        dc.b    #$1A, #12, #VOL06REST02 ; D
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$23, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$23, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$23, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$23, #12, #VOL06REST02 ; A
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
 
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$46, #12, #VOL06REST02 ; A
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$8E, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$86, #12, #VOL06REST02 ; A#
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$7E, #12, #VOL06REST02 ; B
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+
+	;===================================
+
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$2C, #12, #VOL06REST02 ; F
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$23, #12, #VOL06REST02 ; A
+	dc.b	#$42, #12, #VOL06REST02 ; A#
+	dc.b	#$21, #12, #VOL06REST02 ; A#
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$1D, #12, #VOL06REST02 ; C
+
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$27, #12, #VOL06REST02 ; G
+	dc.b	#$3F, #12, #VOL06REST02 ; B
+	dc.b	#$1F, #12, #VOL06REST02 ; B
+	dc.b	#$3B, #12, #VOL06REST02 ; C
+	dc.b	#$1D, #12, #VOL06REST02 ; C
+	dc.b	#$34, #12, #VOL06REST02 ; D
+	dc.b	#$1A, #12, #VOL06REST02 ; D
+
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$23, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$23, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$23, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$23, #12, #VOL06REST02 ; A
+
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$46, #12, #VOL06REST02 ; A
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
 	dc.b	#<Spelunker3Track2
@@ -185,16 +277,14 @@ Spelunker3Track3
 	; $FF means it's over, loop back.
 
   IF MUTE_TRACK3
-        ; HACK - turn these lines to shut off music for this track
-        dc.b   #$00, #96, #RESTDEFAULT ; rest
-        dc.b   #$FF
-        dc.b   #<Spelunker3Track4
-        dc.b   #>Spelunker3Track4
+	; HACK - turn these lines to shut off music for this track
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$FF
+	dc.b	#<Spelunker3Track4
+	dc.b	#>Spelunker3Track4
   ELSE
 
-	; Uses pokey_notes column P (green)
-        ;dc.b    #$71, #24, #ARCH24_16FD ; B
-
+	; This track has no music
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker3Track3
@@ -216,7 +306,7 @@ Spelunker3Track4
   ELSE
 
 	; This track has no music
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker3Track4
 	dc.b	#>Spelunker3Track4
