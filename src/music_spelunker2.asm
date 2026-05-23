@@ -312,11 +312,11 @@ Spelunker2Track3
 	; $FF means it's over, loop back.
 
   IF MUTE_TRACK3
-        ; HACK - turn these lines to shut off music for this track
-        dc.b   #$00, #96, #RESTDEFAULT ; rest
-        dc.b   #$FF
-        dc.b   #<Spelunker2Track4
-        dc.b   #>Spelunker2Track4
+	; HACK - turn these lines to shut off music for this track
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$FF
+	dc.b	#<Spelunker2Track4
+	dc.b	#>Spelunker2Track4
   ELSE
 	; This track has no music
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
