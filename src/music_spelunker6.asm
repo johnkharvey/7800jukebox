@@ -50,10 +50,29 @@ Spelunker6Track2
 	dc.b	#>Spelunker6Track2
    ELSE
 
-	; Uses pokey_notes column H (brown)
-        ;dc.b    #$7E, #144, #VOL04_CONST ; B
+        ; Uses pokey_notes column H (brown)
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$64, #12, #VOL06REST02 ; D#
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$42, #12, #VOL06REST02 ; A#
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$64, #12, #VOL06REST02 ; D#
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$42, #12, #VOL06REST02 ; A#
+
+        dc.b    #$6A, #12, #VOL06REST02 ; D
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$4B, #12, #VOL06REST02 ; G#
+        dc.b    #$3B, #12, #VOL06REST02 ; C
+        dc.b    #$6A, #12, #VOL06REST02 ; D
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$4B, #12, #VOL06REST02 ; G#
+        dc.b    #$3B, #12, #VOL06REST02 ; C
 
         dc.b    #$00, #96, #RESTDEFAULT ; rest
+
+        dc.b    #$00, #96, #RESTDEFAULT ; rest
+
 	dc.b	#$FF
 	dc.b	#<Spelunker6Track2
 	dc.b	#>Spelunker6Track2
