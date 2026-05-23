@@ -76,7 +76,7 @@ Spelunker9Track2
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track2
 	dc.b	#>Spelunker9Track2
-   ELSE
+  ELSE
 
         ; Uses pokey_notes column H (brown)
         dc.b    #$27, #18, #VOL04_CONST ; G

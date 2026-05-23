@@ -167,7 +167,7 @@ Spelunker2Track2
 	dc.b	#$FF
 	dc.b	#<Spelunker2Track2
 	dc.b	#>Spelunker2Track2
-   ELSE
+  ELSE
 
   IF SPELUNKER2_PLAY_PHRASE1
 	; Uses pokey_notes column H (brown)

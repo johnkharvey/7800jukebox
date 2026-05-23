@@ -49,7 +49,7 @@ Spelunker7Track2
 	dc.b	#$FF
 	dc.b	#<Spelunker7Track2
 	dc.b	#>Spelunker7Track2
-   ELSE
+  ELSE
 
 	; Uses pokey_notes column H (brown)
         ;dc.b    #$7E, #144, #VOL04_CONST ; B
