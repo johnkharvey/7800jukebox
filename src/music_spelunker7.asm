@@ -54,6 +54,22 @@ Spelunker7Track2
 	; Uses pokey_notes column H (brown)
         ;dc.b    #$7E, #144, #VOL04_CONST ; B
 
+        dc.b    #$4F, #12, #VOL06REST02 ; G
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+        dc.b    #$64, #12, #VOL06REST02 ; D#
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+        dc.b    #$6A, #12, #VOL06REST02 ; D
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$00, #12, #RESTDEFAULT ; rest
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$00, #36, #RESTDEFAULT ; rest
+
 Spelunker7Track2Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
