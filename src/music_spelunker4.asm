@@ -51,8 +51,45 @@ Spelunker4Track2
 	dc.b	#>Spelunker4Track2
    ELSE
 
-	; Uses pokey_notes column H (brown)
-        ;dc.b    #$7E, #144, #VOL04_CONST ; B
+        ; Uses pokey_notes column H (brown)
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$3B, #12, #VOL06REST02 ; C
+        dc.b    #$5E, #12, #VOL06REST02 ; E
+        dc.b    #$2F, #12, #VOL06REST02 ; E
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$2C, #12, #VOL06REST02 ; F
+        dc.b    #$4F, #12, #VOL06REST02 ; G
+        dc.b    #$27, #12, #VOL06REST02 ; G
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #$9F, #12, #VOL06REST02 ; G
+        dc.b    #$4F, #12, #VOL06REST02 ; G
+        dc.b    #$7E, #12, #VOL06REST02 ; B
+        dc.b    #$3F, #12, #VOL06REST02 ; B
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$3B, #12, #VOL06REST02 ; C
+        dc.b    #$6A, #12, #VOL06REST02 ; D
+        dc.b    #$34, #12, #VOL06REST02 ; D
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #$B3, #12, #VOL06REST02 ; F
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$8E, #12, #VOL06REST02 ; A
+        dc.b    #$46, #12, #VOL06REST02 ; A
+        dc.b    #$7E, #12, #VOL06REST02 ; B
+        dc.b    #$3F, #12, #VOL06REST02 ; B
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$3B, #12, #VOL06REST02 ; C
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #$77, #12, #VOL06REST02 ; C
+        dc.b    #$3B, #12, #VOL06REST02 ; C
+        dc.b    #$5E, #12, #VOL06REST02 ; E
+        dc.b    #$2F, #12, #VOL06REST02 ; E
+        dc.b    #$59, #12, #VOL06REST02 ; F
+        dc.b    #$2C, #12, #VOL06REST02 ; F
+        dc.b    #$4F, #12, #VOL06REST02 ; G
+        dc.b    #$27, #12, #VOL06REST02 ; G
 
 Spelunker4Track2Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
