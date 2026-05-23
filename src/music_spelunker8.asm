@@ -78,10 +78,8 @@ Spelunker8Track3
         dc.b   #>Spelunker8Track4
   ELSE
 
-	; Uses pokey_notes column P (green)
-        ;dc.b    #$71, #24, #ARCH24_16FD ; B
-
 Spelunker8Track3Stops
+        ; This track has no music
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker8Track3Stops
