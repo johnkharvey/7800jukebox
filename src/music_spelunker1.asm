@@ -310,9 +310,11 @@ Spelunker1Track1
 	dc.b	#$00, #96, #RESTDEFAULT	; rest
 	dc.b	#$00, #96, #RESTDEFAULT	; rest
 
+Spelunker1Track1Stops
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker1Track1
-	dc.b	#>Spelunker1Track1
+	dc.b	#<Spelunker1Track1Stops
+	dc.b	#>Spelunker1Track1Stops
 
   ENDIF ; (IF MUTE_TRACK1)
 
@@ -512,9 +514,11 @@ Spelunker1Track2
 
 	dc.b	#$00, #96, #RESTDEFAULT	; rest
 
+Spelunker1Track2Stops
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker1Track2
-	dc.b	#>Spelunker1Track2
+	dc.b	#<Spelunker1Track2Stops
+	dc.b	#>Spelunker1Track2Stops
   ENDIF ; (IF MUTE_TRACK2)
 
 ;================
@@ -532,10 +536,11 @@ Spelunker1Track3
 	dc.b	#>Spelunker1Track4
   ELSE
 	; This track has no music
+Spelunker1Track3Stops
 	dc.b	#$00, #96, #RESTDEFAULT	; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker1Track3
-	dc.b	#>Spelunker1Track3
+	dc.b	#<Spelunker1Track3Stops
+	dc.b	#>Spelunker1Track3Stops
   ENDIF ; (IF MUTE_TRACK3)
 
 ;================
@@ -551,8 +556,9 @@ Spelunker1Track4
 	dc.b	#>Spelunker1Track4
   ELSE
 	; This track has no music
+Spelunker1Track4Stops
 	dc.b	#$00, #96, #RESTDEFAULT	; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker1Track4
-	dc.b	#>Spelunker1Track4
+	dc.b	#<Spelunker1Track4Stops
+	dc.b	#>Spelunker1Track4Stops
   ENDIF ; (IF MUTE_TRACK4)
