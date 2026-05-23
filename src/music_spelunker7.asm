@@ -25,10 +25,25 @@ Spelunker7Track1
   ELSE
 
 	; Uses pokey_notes column P (green)
-        ;dc.b    #$7E, #144, #VOL04_CONST ; B
+	dc.b	#$39, #16, #ARCH12_16EX ; A#
+	dc.b	#$46, #8,  #VOL04_CONST ; G
+	dc.b	#$3E, #16, #ARCH12_16EX ; A
+	dc.b	#$4F, #8,  #VOL04_CONST ; F
+	dc.b	#$46, #16, #ARCH12_16EX ; G
+	dc.b	#$58, #8,  #VOL04_CONST ; D#
+	dc.b	#$4F, #16, #ARCH12_16EX ; F
+	dc.b	#$5E, #8,  #VOL04_CONST ; D
+
+	; Uses pokey_notes column P (green)
+	dc.b	#$6A, #16, #ARCH12_16EX ; C
+	dc.b	#$00, #8,  #RESTDEFAULT ; rest
+	dc.b	#$58, #16, #ARCH12_16EX ; D#
+	dc.b	#$00, #8,  #RESTDEFAULT ; rest
+	dc.b	#$6A, #24, #ARCH24_16FD ; C
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
 
 Spelunker7Track1Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker7Track1Stops
 	dc.b	#>Spelunker7Track1Stops
@@ -52,26 +67,25 @@ Spelunker7Track2
   ELSE
 
 	; Uses pokey_notes column H (brown)
-        ;dc.b    #$7E, #144, #VOL04_CONST ; B
+	dc.b	#$4F, #12, #VOL06REST02 ; G
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$59, #12, #VOL06REST02 ; F
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$64, #12, #VOL06REST02 ; D#
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$6A, #12, #VOL06REST02 ; D
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
 
-        dc.b    #$4F, #12, #VOL06REST02 ; G
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$59, #12, #VOL06REST02 ; F
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$64, #12, #VOL06REST02 ; D#
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$6A, #12, #VOL06REST02 ; D
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$00, #12, #RESTDEFAULT ; rest
-        dc.b    #$77, #12, #VOL06REST02 ; C
-        dc.b    #$00, #36, #RESTDEFAULT ; rest
+	; Uses pokey_notes column H (brown)
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$77, #12, #VOL06REST02 ; C
+	dc.b	#$00, #36, #RESTDEFAULT ; rest
 
 Spelunker7Track2Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker7Track2Stops
 	dc.b	#>Spelunker7Track2Stops
@@ -87,15 +101,15 @@ Spelunker7Track3
 	; $FF means it's over, loop back.
 
   IF MUTE_TRACK3
-        ; HACK - turn these lines to shut off music for this track
-        dc.b   #$00, #96, #RESTDEFAULT ; rest
-        dc.b   #$FF
-        dc.b   #<Spelunker7Track4
-        dc.b   #>Spelunker7Track4
+	; HACK - turn these lines to shut off music for this track
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$FF
+	dc.b	#<Spelunker7Track4
+	dc.b	#>Spelunker7Track4
   ELSE
 
 Spelunker7Track3Stops
-        ; This track has no music
+	; This track has no music
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker7Track3Stops
@@ -118,7 +132,7 @@ Spelunker7Track4
 
 	; This track has no music
 Spelunker7Track4Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker7Track4Stops
 	dc.b	#>Spelunker7Track4Stops
