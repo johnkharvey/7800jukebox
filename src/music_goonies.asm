@@ -49,7 +49,7 @@ GooniesTrack1
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #ARCH24_16FD	; D
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 	dc.b	#$5E, #12, #ARCH12_16EX ; D
@@ -58,7 +58,7 @@ GooniesTrack1
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
@@ -84,7 +84,7 @@ GooniesTrack1Restart
 
 	; Main melody
 	; "Here we are hanging"
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #24, #TREMOLOLONG ; A
 	dc.b	#$4F, #12, #TREMOLOLONG ; F
@@ -92,7 +92,7 @@ GooniesTrack1Restart
 	dc.b	#$4F, #12, #TREMOLOLONG ; F
 
 	; "onto strains of greens and blues"
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$46, #24, #VOL04REST02 ; G
@@ -103,7 +103,7 @@ GooniesTrack1Restart
 	dc.b	#$5E, #12, #VOL04REST02 ; D
 
 	; (instrumental)
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #12, #VOL04REST02 ; D
 	dc.b	#$5E, #12, #VOL04REST02 ; D
@@ -114,7 +114,7 @@ GooniesTrack1Restart
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 
 	; "Break the chain and"
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #12, #TREMOLOLONG ; A
 	dc.b	#$3E, #12, #TREMOLOLONG ; A
@@ -122,14 +122,14 @@ GooniesTrack1Restart
 	dc.b	#$3E, #24, #TREMOLOLONG ; A
 
 	; "we break down"
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; "but it's not real if you don't feel it"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 	dc.b	#$4F, #12, #VOL04REST02 ; F
@@ -143,7 +143,7 @@ GooniesTrack1Restart
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "Unspoken"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
@@ -151,15 +151,15 @@ GooniesTrack1Restart
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "expectations"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 	dc.b	#$53, #24, #VOL04REST02 ; E
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; "Ideas you"
-        ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
-      ; Uses pokey_notes column P (green)
+	; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
@@ -167,14 +167,14 @@ GooniesTrack1Restart
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 
 	; Used to play with"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$53, #24, #VOL04REST02 ; E
 	dc.b	#$5E, #24, #VOL04REST02 ; D
 	dc.b	#$64, #24, #VOL04REST02 ; C#
 	dc.b	#$5E, #24, #VOL04REST02 ; D
 
 	; They've finally"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
@@ -182,7 +182,7 @@ GooniesTrack1Restart
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
 	; "taken shape now"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 	dc.b	#$3E, #24, #VOL04REST02 ; A
@@ -191,7 +191,7 @@ GooniesTrack1Restart
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 
 	; "Good enough"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #18, #VOL06REST02 ; A
 	dc.b	#$3E, #6,  #VOL06REST02 ; A
@@ -200,14 +200,14 @@ GooniesTrack1Restart
 	dc.b	#$4F, #6,  #VOL04REST02 ; F
 
 	; "for you it's"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 	dc.b	#$3E, #24, #VOL06REST02 ; A
 	dc.b	#$3E, #24, #VOL06REST02 ; A
 	dc.b	#$3E, #24, #VOL06REST02 ; A
 
 	; "Good enough"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #18, #VOL06REST02 ; A
 	dc.b	#$3E, #6,  #VOL06REST02 ; A
@@ -218,7 +218,7 @@ GooniesTrack1Restart
 	dc.b	#$46, #6,  #VOL04REST02 ; G
 
 	; "For me it's good enough"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 	dc.b	#$39, #24, #VOL06REST02 ; Bb
 	dc.b	#$39, #36, #VOL06REST02 ; Bb
@@ -229,7 +229,7 @@ GooniesTrack1Restart
 
 	; It's good enough for me"
 	; page 3 - https://www.youtube.com/watch?v=o3X_mM3Yc_g
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
 	dc.b	#$3E, #12, #VOL06REST02 ; A
 	dc.b	#$33, #12, #VOL06REST02 ; C
@@ -243,7 +243,7 @@ GooniesTrack1Restart
 	dc.b	#$2D, #12, #VOL06REST02 ; D
 
 	; "Yeah, yeah, yeah, yeah, yeah"
-       ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$25, #18, #VOL06REST02 ; F
 	dc.b	#$28, #18, #VOL06REST02 ; E
 	dc.b	#$2D, #12, #VOL06REST02 ; D
@@ -617,7 +617,7 @@ GooniesTrack3
 	dc.b	#$17, #12, #ARCH12_16EX ; C
 	dc.b	#$14, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$2D, #24, #ARCH24_16FD ; D
 	dc.b	#$14, #12, #ARCH12_16EX ; D
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
@@ -626,7 +626,7 @@ GooniesTrack3
 	dc.b	#$17, #12, #ARCH12_16EX ; C
 	dc.b	#$14, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$2D, #6,  #ARCH12_16EX ; D
 	dc.b	#$2D, #6,  #ARCH12_16EX ; D
@@ -639,7 +639,7 @@ GooniesTrack3
 
 GooniesTrack3Restart
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #ARCH24_16FD ; D
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 	dc.b	#$5E, #12, #ARCH12_16EX ; D
@@ -648,7 +648,7 @@ GooniesTrack3Restart
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
@@ -659,7 +659,7 @@ GooniesTrack3Restart
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #ARCH24_16FD ; D
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 	dc.b	#$5E, #12, #ARCH12_16EX ; D
@@ -668,7 +668,7 @@ GooniesTrack3Restart
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Uses pokey_notes column P (green)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
 	dc.b	#$5E, #6,  #ARCH12_16EX ; D
@@ -679,17 +679,17 @@ GooniesTrack3Restart
 	dc.b	#$33, #12, #ARCH12_16EX ; C
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
 
-        ; Main melody
-        ; "Here we are hanging"
-        ; Uses pokey_notes column P (green)
+	; Main melody
+	; "Here we are hanging"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 
-        ; "onto strains of greens and blues"
-        ; Uses pokey_notes column P (green)
+	; "onto strains of greens and blues"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #06, #RESTDEFAULT ; rest
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 	dc.b	#$3E, #24, #VOL04REST02 ; A
@@ -700,8 +700,8 @@ GooniesTrack3Restart
 	dc.b	#$8F, #12, #VOL04REST02 ; G
 	dc.b	#$7F, #12, #VOL04REST02 ; A
 
-        ; (instrumental)
-        ; Uses pokey_notes column P (green)
+	; (instrumental)
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #12, #VOL04REST02 ; D
 	dc.b	#$5E, #12, #VOL04REST02 ; D
@@ -711,24 +711,24 @@ GooniesTrack3Restart
 	dc.b	#$46, #12, #VOL04REST02 ; G
 	dc.b	#$4F, #12, #VOL04REST02 ; F
 
-        ; "Break the chain and"
-        ; Uses pokey_notes column P (green)
+	; "Break the chain and"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
-        ; "we break down"
-        ; Uses pokey_notes column P (green)
+	; "we break down"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #6,  #RESTDEFAULT ; rest
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$4F, #18, #VOL04REST02 ; F
 
-        ; "but it's not real if you don't feel it"
-       ; Uses pokey_notes column P (green)
+	; "but it's not real if you don't feel it"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$5E, #12, #VOL04REST02 ; D
 	dc.b	#$5E, #12, #VOL04REST02 ; D
@@ -741,8 +741,8 @@ GooniesTrack3Restart
 	dc.b	#$53, #24, #VOL04REST02 ; E
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 
-        ; "Unspoken"
-       ; Uses pokey_notes column P (green)
+	; "Unspoken"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
@@ -750,38 +750,38 @@ GooniesTrack3Restart
 	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 
-        ; "expectations"
-       ; Uses pokey_notes column P (green)
+	; "expectations"
+	; Uses pokey_notes column P (green)
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
-        ; "Ideas you"
-        ; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
-      ; Uses pokey_notes column P (green)
+	; "Ideas you"
+	; page 2 in https://www.youtube.com/watch?v=o3X_mM3Yc_g
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$3E, #12, #VOL04REST02 ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$3E, #24, #VOL04REST02 ; A
 
-        ; Used to play with"
-       ; Uses pokey_notes column P (green)
+	; Used to play with"
+	; Uses pokey_notes column P (green)
 	dc.b	#$46, #24, #VOL04REST02 ; G
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 	dc.b	#$53, #24, #VOL04REST02 ; E
 	dc.b	#$4F, #24, #VOL04REST02 ; F
 
-        ; They've finally"
-       ; Uses pokey_notes column P (green)
+	; They've finally"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$33, #12, #VOL04REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
 
-        ; "taken shape now"
-       ; Uses pokey_notes column P (green)
+	; "taken shape now"
+	; Uses pokey_notes column P (green)
 	dc.b	#$33, #12, #VOL06REST02 ; C
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$39, #24, #VOL04REST02 ; Bb
@@ -791,8 +791,8 @@ GooniesTrack3Restart
 	dc.b	#$5E, #12, #VOL04REST02 ; D
 	dc.b	#$6A, #12, #VOL04REST02 ; C
 
-        ; "Good enough"
-       ; Uses pokey_notes column P (green)
+	; "Good enough"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$4F, #18, #VOL06REST02 ; F
 	dc.b	#$4F, #6,  #VOL06REST02 ; F
@@ -800,15 +800,15 @@ GooniesTrack3Restart
 	dc.b	#$6A, #18, #VOL04REST02 ; C
 	dc.b	#$6A, #6,  #VOL04REST02 ; C
 
-        ; "for you it's"
-       ; Uses pokey_notes column P (green)
+	; "for you it's"
+	; Uses pokey_notes column P (green)
 	dc.b	#$6A, #24, #VOL04REST02 ; C
 	dc.b	#$4F, #24, #VOL06REST02 ; F
 	dc.b	#$4F, #24, #VOL06REST02 ; F
 	dc.b	#$4F, #24, #VOL06REST02 ; F
 
-        ; "Good enough"
-       ; Uses pokey_notes column P (green)
+	; "Good enough"
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$5E, #18, #VOL06REST02 ; D
 	dc.b	#$5E, #6,  #VOL06REST02 ; D
@@ -818,8 +818,8 @@ GooniesTrack3Restart
 	dc.b	#$4F, #6,  #VOL04REST02 ; F
 	dc.b	#$53, #6,  #VOL04REST02 ; E
 
-        ; "For me it's good enough"
-       ; Uses pokey_notes column P (green)
+	; "For me it's good enough"
+	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #VOL04REST02 ; D
 	dc.b	#$4F, #24, #VOL06REST02 ; F
 	dc.b	#$4F, #36, #VOL06REST02 ; F
@@ -828,9 +828,9 @@ GooniesTrack3Restart
 	dc.b	#$46, #12, #VOL06REST02 ; G
 	dc.b	#$46, #48, #TREMOLOLONG ; G - tremolo
 
-        ; It's good enough for me"
-        ; page 3 - https://www.youtube.com/watch?v=o3X_mM3Yc_g
-       ; Uses pokey_notes column P (green)
+	; It's good enough for me"
+	; page 3 - https://www.youtube.com/watch?v=o3X_mM3Yc_g
+	; Uses pokey_notes column P (green)
 	dc.b	#$00, #48, #RESTDEFAULT ; rest
 	dc.b	#$53, #12, #VOL06REST02 ; E
 	dc.b	#$46, #12, #VOL06REST02 ; G
@@ -843,8 +843,8 @@ GooniesTrack3Restart
 	dc.b	#$53, #12, #VOL06REST02 ; E
 	dc.b	#$3E, #12, #VOL06REST02 ; A
 
-        ; "Yeah, yeah, yeah, yeah, yeah"
-       ; Uses pokey_notes column P (green)
+	; "Yeah, yeah, yeah, yeah, yeah"
+	; Uses pokey_notes column P (green)
 	dc.b	#$25, #18, #VOL06REST02 ; F
 	dc.b	#$28, #18, #VOL06REST02 ; E
 	dc.b	#$2D, #12, #VOL06REST02 ; D

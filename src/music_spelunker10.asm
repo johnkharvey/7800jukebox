@@ -38,30 +38,30 @@ Spelunker10Track1
 
 	dc.b	#$4A, #96, #ARCH96_72FD; F#
 
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$71, #12, #ARCH12_16EX ; B
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$4A, #12, #ARCH12_16EX ; F#
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$71, #12, #ARCH12_16EX ; B
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$4A, #12, #ARCH12_16EX ; F#
 
-        dc.b    #$46, #12, #ARCH12_16EX ; G
-        dc.b    #$4A, #12, #ARCH12_16EX ; F#
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$71, #12, #ARCH12_16EX ; B
+	dc.b	#$46, #12, #ARCH12_16EX ; G
+	dc.b	#$4A, #12, #ARCH12_16EX ; F#
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$71, #12, #ARCH12_16EX ; B
 
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$71, #12, #ARCH12_16EX ; B
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$4A, #12, #ARCH12_16EX ; F#
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$71, #12, #ARCH12_16EX ; B
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$4A, #12, #ARCH12_16EX ; F#
 
-        dc.b    #$46, #12, #ARCH12_16EX ; G
-        dc.b    #$4A, #12, #ARCH12_16EX ; F#
-        dc.b    #$53, #12, #ARCH12_16EX ; E
-        dc.b    #$71, #12, #ARCH12_16EX ; B
+	dc.b	#$46, #12, #ARCH12_16EX ; G
+	dc.b	#$4A, #12, #ARCH12_16EX ; F#
+	dc.b	#$53, #12, #ARCH12_16EX ; E
+	dc.b	#$71, #12, #ARCH12_16EX ; B
 
 	dc.b	#$53, #96, #ARCH96_72FD ; E
 
 Spelunker10Track1Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker10Track1Stops
 	dc.b	#>Spelunker10Track1Stops
@@ -85,16 +85,16 @@ Spelunker10Track2
   ELSE
 
 	; Uses pokey_notes column H (brown)
-        dc.b    #$7E, #96,  #VOL04_CONST ; B
-        dc.b    #$8E, #96,  #VOL04_CONST ; A
-        dc.b    #$7E, #48,  #VOL04_CONST ; B
-        dc.b    #$8E, #48,  #VOL04_CONST ; A
-        dc.b    #$9F, #48,  #VOL04_CONST ; G
-        dc.b    #$8E, #48,  #VOL04_CONST ; A
-        dc.b    #$7E, #144, #VOL04_CONST ; B
+	dc.b	#$7E, #96,  #VOL04_CONST ; B
+	dc.b	#$8E, #96,  #VOL04_CONST ; A
+	dc.b	#$7E, #48,  #VOL04_CONST ; B
+	dc.b	#$8E, #48,  #VOL04_CONST ; A
+	dc.b	#$9F, #48,  #VOL04_CONST ; G
+	dc.b	#$8E, #48,  #VOL04_CONST ; A
+	dc.b	#$7E, #144, #VOL04_CONST ; B
 
 Spelunker10Track2Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker10Track2Stops
 	dc.b	#>Spelunker10Track2Stops
@@ -110,41 +110,41 @@ Spelunker10Track3
 	; $FF means it's over, loop back.
 
   IF MUTE_TRACK3
-        ; HACK - turn these lines to shut off music for this track
-        dc.b   #$00, #96, #RESTDEFAULT ; rest
-        dc.b   #$FF
-        dc.b   #<Spelunker10Track4
-        dc.b   #>Spelunker10Track4
+	; HACK - turn these lines to shut off music for this track
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$FF
+	dc.b	#<Spelunker10Track4
+	dc.b	#>Spelunker10Track4
   ELSE
 
 	; Uses pokey_notes column P (green)
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
 
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$D8, #24, #ARCH24_16FD ; C
-        dc.b    #$D8, #24, #ARCH24_16FD ; C
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
-        dc.b    #$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$D8, #24, #ARCH24_16FD ; C
+	dc.b	#$D8, #24, #ARCH24_16FD ; C
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
 
-        dc.b    #$AB, #24, #ARCH24_16FD ; E
-        dc.b    #$00, #24, #RESTDEFAULT ; rest
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
 
 
 Spelunker10Track3Stops
@@ -170,7 +170,7 @@ Spelunker10Track4
 
 	; This track has no music
 Spelunker10Track4Stops
-        dc.b    #$00, #96, #RESTDEFAULT ; rest
+	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker10Track4Stops
 	dc.b	#>Spelunker10Track4Stops
