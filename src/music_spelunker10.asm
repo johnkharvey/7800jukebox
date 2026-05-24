@@ -85,13 +85,13 @@ Spelunker10Track2
   ELSE
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$7E, #96,  #VOL04_CONST ; B
-	dc.b	#$8E, #96,  #VOL04_CONST ; A
-	dc.b	#$7E, #48,  #VOL04_CONST ; B
-	dc.b	#$8E, #48,  #VOL04_CONST ; A
-	dc.b	#$9F, #48,  #VOL04_CONST ; G
-	dc.b	#$8E, #48,  #VOL04_CONST ; A
-	dc.b	#$7E, #144, #VOL04_CONST ; B
+	dc.b	#$3F, #96,  #VOL04_CONST ; B
+	dc.b	#$46, #96,  #VOL04_CONST ; A
+	dc.b	#$3F, #48,  #VOL04_CONST ; B
+	dc.b	#$46, #48,  #VOL04_CONST ; A
+	dc.b	#$4F, #48,  #VOL04_CONST ; G
+	dc.b	#$46, #48,  #VOL04_CONST ; A
+	dc.b	#$3F, #144, #VOL04_CONST ; B
 
 Spelunker10Track2Stops
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
@@ -117,33 +117,61 @@ Spelunker10Track3
 	dc.b	#>Spelunker10Track4
   ELSE
 
+       ; Uses pokey_notes column P (green)
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+
+       dc.b    #$D8, #24, #ARCH24_16FD ; C
+       dc.b    #$D8, #24, #ARCH24_16FD ; C
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+       dc.b    #$C1, #24, #ARCH24_16FD ; D
+
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+
+       dc.b    #$AB, #24, #ARCH24_16FD ; E
+
 	; Uses pokey_notes column P (green)
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
 
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
 
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
 
-	dc.b	#$D8, #24, #ARCH24_16FD ; C
-	dc.b	#$D8, #24, #ARCH24_16FD ; C
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
-	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$6A, #24, #ARCH24_16FD ; C
+	dc.b	#$6A, #24, #ARCH24_16FD ; C
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	dc.b	#$5E, #24, #ARCH24_16FD ; D
 
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
 
-	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$53, #24, #ARCH24_16FD ; E
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 
 
