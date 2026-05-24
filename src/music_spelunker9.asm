@@ -133,35 +133,35 @@ Spelunker9Track3
   ELSE
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$46, #18, #VOL04_CONST ; G
+	dc.b	#$46, #18, #ARCH24_16FD ; G
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL04_CONST ; G
+	dc.b	#$46, #24, #ARCH24_16FD ; G
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #6,  #VOL04_CONST ; G
+	dc.b	#$46, #6,  #ARCH24_16FD ; G
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$46, #18, #VOL04_CONST ; G
+	dc.b	#$46, #18, #ARCH24_16FD ; G
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #VOL04_CONST ; G
+	dc.b	#$46, #24, #ARCH24_16FD ; G
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #6,  #VOL04_CONST ; G
+	dc.b	#$46, #6,  #ARCH24_16FD ; G
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$4F, #18, #VOL04_CONST ; F
+	dc.b	#$4F, #18, #ARCH24_16FD ; F
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$4F, #24, #VOL04_CONST ; F
+	dc.b	#$4F, #24, #ARCH24_16FD ; F
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #6,  #VOL04_CONST ; F
+	dc.b	#$4F, #6,  #ARCH24_16FD ; F
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$4F, #18, #VOL04_CONST ; F
+	dc.b	#$4F, #18, #ARCH24_16FD ; F
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$4F, #24, #VOL04_CONST ; F
+	dc.b	#$4F, #24, #ARCH24_16FD ; F
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #6,  #VOL04_CONST ; F
+	dc.b	#$4F, #6,  #ARCH24_16FD ; F
 	dc.b	#$00, #18, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
