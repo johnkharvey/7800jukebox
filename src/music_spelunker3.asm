@@ -94,16 +94,12 @@ Spelunker3Track1
 
 	;=========================================
 
-	dc.b	#$2A, #12, #ARCH12_16EX ; D#
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
+	dc.b	#$2A, #24, #ARCH48_24FD ; D#
 	dc.b	#$2D, #12, #ARCH12_16EX ; D
-	dc.b	#$2A, #12, #ARCH12_16EX ; D#
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$25, #12, #ARCH12_16EX ; F
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$21, #12, #ARCH12_16EX ; G
+	dc.b	#$2A, #24, #ARCH48_24FD ; D#
+	dc.b	#$25, #24, #ARCH48_24FD ; F
+	dc.b	#$21, #24, #ARCH48_24FD ; G
 
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
 	dc.b	#$25, #36, #ARCH48_24FD ; F
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$46, #12, #ARCH12_16EX ; G (low)
