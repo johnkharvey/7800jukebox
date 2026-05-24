@@ -85,13 +85,22 @@ Spelunker10Track2
   ELSE
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$3F, #96,  #VOL04_CONST ; B
-	dc.b	#$46, #96,  #VOL04_CONST ; A
-	dc.b	#$3F, #48,  #VOL04_CONST ; B
-	dc.b	#$46, #48,  #VOL04_CONST ; A
-	dc.b	#$4F, #48,  #VOL04_CONST ; G
-	dc.b	#$46, #48,  #VOL04_CONST ; A
-	dc.b	#$3F, #144, #VOL04_CONST ; B
+	dc.b	#$3F, #96,  #VOL02_CONST ; B
+
+	; Uses pokey_notes column H (brown)
+	dc.b	#$46, #96,  #VOL02_CONST ; A
+
+	; Uses pokey_notes column H (brown)
+	dc.b	#$3F, #48,  #VOL02_CONST ; B
+	dc.b	#$46, #48,  #VOL02_CONST ; A
+
+	; Uses pokey_notes column H (brown)
+	dc.b	#$4F, #48,  #VOL02_CONST ; G
+	dc.b	#$46, #48,  #VOL02_CONST ; A
+
+	; Uses pokey_notes column H (brown)
+	dc.b	#$3F, #168, #VOL02_CONST ; B
+	dc.b	#$00, #24, #RESTDEFAULT ; rest
 
 Spelunker10Track2Stops
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
@@ -117,63 +126,39 @@ Spelunker10Track3
 	dc.b	#>Spelunker10Track4
   ELSE
 
-       ; Uses pokey_notes column P (green)
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-
-       dc.b    #$D8, #24, #ARCH24_16FD ; C
-       dc.b    #$D8, #24, #ARCH24_16FD ; C
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-       dc.b    #$C1, #24, #ARCH24_16FD ; D
-
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
-
-       dc.b    #$AB, #24, #ARCH24_16FD ; E
+	; Uses pokey_notes column P (green)
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	; Uses pokey_notes column P (green)
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	; Uses pokey_notes column P (green)
+	dc.b	#$D8, #24, #ARCH24_16FD ; C
+	dc.b	#$D8, #24, #ARCH24_16FD ; C
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
+	dc.b	#$C1, #24, #ARCH24_16FD ; D
 
-	dc.b	#$6A, #24, #ARCH24_16FD ; C
-	dc.b	#$6A, #24, #ARCH24_16FD ; C
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
-	dc.b	#$5E, #24, #ARCH24_16FD ; D
+	; Uses pokey_notes column P (green)
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
+	dc.b	#$AB, #24, #ARCH24_16FD ; E
 
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-
-	dc.b	#$53, #24, #ARCH24_16FD ; E
-	dc.b	#$00, #24, #RESTDEFAULT ; rest
-
+	; Uses pokey_notes column P (green)
+	dc.b	#$AB, #96, #ARCH96_72FD ; E
+	;dc.b	#$00, #24, #RESTDEFAULT ; rest
 
 Spelunker10Track3Stops
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
