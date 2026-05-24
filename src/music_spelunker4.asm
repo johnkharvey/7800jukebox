@@ -30,7 +30,7 @@ Spelunker4Track1
 	dc.b	#$79, #12, #VOL06_CONST ; A#
 	dc.b	#$7F, #12, #VOL06_CONST ; A
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$8F, #48, #ARCH96_72FD ; G
+	dc.b	#$8F, #48, #ARCH48_24FD ; G
 	dc.b	#$00, #60, #RESTDEFAULT ; rest
 
 	dc.b	#$A1, #12, #VOL06_CONST ; F
@@ -40,7 +40,7 @@ Spelunker4Track1
 	dc.b	#$A1, #12, #VOL06_CONST ; F
 	dc.b	#$8F, #12, #VOL06_CONST ; G
 	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$AB, #48, #ARCH96_72FD ; E
+	dc.b	#$AB, #48, #ARCH48_24FD ; E
 	dc.b	#$00, #60, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
@@ -76,8 +76,8 @@ Spelunker4Track2
 	dc.b	#$27, #12, #VOL06REST02 ; G
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$9F, #12, #VOL04REST02 ; G ; make this one a hair softer so it doesn't collide with track 1 too noisily
-	dc.b	#$4F, #12, #VOL04REST02 ; G ; make this one a hair softer so it doesn't collide with track 1 too noisily
+	dc.b	#$9F, #12, #VOL06REST02 ; G
+	dc.b	#$4F, #12, #VOL06REST02 ; G
 	dc.b	#$7E, #12, #VOL06REST02 ; B
 	dc.b	#$3F, #12, #VOL06REST02 ; B
 	dc.b	#$77, #12, #VOL06REST02 ; C
