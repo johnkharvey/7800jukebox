@@ -88,7 +88,7 @@ I call them "triplets".  They are divided in this manner:
 2) number of frames to play the note
 3) effects added to the note
 
-For the effects, open up ./src/pokeymusic.asm and look at the CONST's defined under TOTAL_NUM_EFFECTS.  These are all the effects you can use for any note.:w
+For the effects, open up ./src/pokeymusic.asm and look at the CONST's defined under TOTAL_NUM_EFFECTS.  These are all the effects you can use for any note.
 
 If you start a "triplet" with $FF that is a signal that the soundtrack is over and needs to jump somewhere else.
 
@@ -129,6 +129,10 @@ Simply set any of those "0" values to 1 and that track will mute.
 
  * There are 2 NES games I have arranged into POKEY format: Spelunker (10 Tracks) and the Goonies (1 track).
  * If you want to compare against the NES original, you can use a tool like "Audio Overload" to run the corresponding game's NSF (Nintendo Sound Format) files which allows you to enable / disable different NES music tracks.  NSF files not provided by this author for copyright reasons.
+
+### Integrating with your own code
+
+ * Look at how ./src/jukebox.asm calls the other files.  You'll need to port those "hooks" over to your own file.
 
 ### Special thanks
 
