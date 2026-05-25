@@ -117,4 +117,3 @@ Goonies2Song2Track4Stops
 	dc.b	#>Goonies2Song2Track4Stops
   ENDIF ; (IF MUTE_TRACK4)
 
-MUTE_TRACK1		set	0
