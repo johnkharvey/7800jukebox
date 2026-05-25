@@ -130,6 +130,13 @@ Simply set any of those "0" values to 1 and that track will mute.
  * There are 2 NES games I have arranged into POKEY format: Spelunker (10 Tracks) and the Goonies (1 track).
  * If you want to compare against the NES original, you can use a tool like "Audio Overload" to run the corresponding game's NSF (Nintendo Sound Format) files which allows you to enable / disable different NES music tracks.  NSF files not provided by this author for copyright reasons.
 
+### Adding your own tracks
+
+There are 2 ways to proceed:
+
+ * Feel free to change any of the example tracks for your own project.
+ * Alternatively, check out commit 906080b.  It demonstrates how to add a new file to the Jukebox.
+
 ### Integrating with your own code
 
  * Look at how ./src/jukebox.asm calls the other files.  You'll need to port those "hooks" over to your own file.
