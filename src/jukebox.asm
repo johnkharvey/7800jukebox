@@ -115,7 +115,7 @@ PALETTE5		equ	#%00000101
 PALETTE6		equ	#%00000110
 PALETTE7		equ	#%00000111
 
-NUMBER_OF_SONGS		equ	13
+NUMBER_OF_SONGS		equ	14
 
 ;################################################################
 ; Let's define macros here
@@ -735,6 +735,8 @@ DrawScreen
 	BEQ	TextIndexEleven
 	CMP	#12
 	BEQ	TextIndexTwelve
+	CMP	#13
+	BEQ	TextIndexThirteen
 	; fall-through
 	JMP	TextIndexPressUpOrDown
 TextIndexZero
@@ -789,6 +791,10 @@ TextIndexTwelve
 	LDA	#<DL_Goonies2Song3
 	STA	DLL_On_Screen+32
 	JMP	AfterText
+TextIndexThirteen
+	LDA	#<DL_Goonies2Song4
+	STA	DLL_On_Screen+32
+	JMP	AfterText
 TextIndexPressUpOrDown
 	LDA	#<DL_PressUpOrDown
 	STA	DLL_On_Screen+32
@@ -816,6 +822,7 @@ PlaylistMSB
 	dc.b	#>SeedPokeyForGoonies2Song1
 	dc.b	#>SeedPokeyForGoonies2Song2
 	dc.b	#>SeedPokeyForGoonies2Song3
+	dc.b	#>SeedPokeyForGoonies2Song4
 
 PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker1
@@ -831,6 +838,7 @@ PlaylistLSB
 	dc.b	#<SeedPokeyForGoonies2Song1
 	dc.b	#<SeedPokeyForGoonies2Song2
 	dc.b	#<SeedPokeyForGoonies2Song3
+	dc.b	#<SeedPokeyForGoonies2Song4
 
 ;################################################################
 ; CHMAP Pointers to the graphic data are here - $1800 in RAM
@@ -882,6 +890,9 @@ CHMAP_Goonies2Song2
 
 CHMAP_Goonies2Song3
    STR_LEN "Goonies 2 - Song 3", CHMAP_Goonies2Song3
+
+CHMAP_Goonies2Song4
+   STR_LEN "Goonies 2 - Song 4", CHMAP_Goonies2Song4
 
 CHMAP_PressUpOrDown
    STR_LEN "Press up or down", CHMAP_PressUpOrDown
@@ -1011,6 +1022,14 @@ DL_Goonies2Song3
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
 	dc.b	>CHMAP_RAM_Start
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song3
+	dc.b	50 ; HPos (0-159)
+	dc.b	$00,$00
+
+DL_Goonies2Song4
+	dc.b	<CHMAP_Goonies2Song4
+	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
+	dc.b	>CHMAP_RAM_Start
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song4
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
