@@ -94,17 +94,21 @@ If you start a "triplet" with $FF that is a signal that the soundtrack is over a
 
 Here is an example of such an $FF signal that goes back to the start of the music:
 
+```
         dc.b    #$FF
         dc.b    #<Spelunker2Track4
         dc.b    #>Spelunker2Track4
+```
 
 whereas here is an example of an $FF signal that will terminate
 
+```
 Spelunker7Track2Stops
         dc.b    #$00, #96, #RESTDEFAULT ; rest
         dc.b    #$FF
         dc.b    #<Spelunker7Track2Stops
         dc.b    #>Spelunker7Track2Stops
+```
 
 Feel free to change any value and play.  All you need to do is type `make` and `make run` to test things out.
 
@@ -112,10 +116,12 @@ If you want to disable any track for any reason, use the macros at the top of th
 
 Every music file has the following at the top of it:
 
+```
 MUTE_TRACK1             set     0
 MUTE_TRACK2             set     0
 MUTE_TRACK3             set     0
 MUTE_TRACK4             set     0
+```
 
 Simply set any of those "0" values to 1 and that track will mute.
 
