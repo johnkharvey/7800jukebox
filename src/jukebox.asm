@@ -774,7 +774,7 @@ TextIndexNine
 	STA	DLL_On_Screen+32
 	JMP	AfterText
 TextIndexTen
-	LDA	#<DL_Goonies
+	LDA	#<DL_Goonies2Song1
 	STA	DLL_On_Screen+32
 	JMP	AfterText
 TextIndexPressUpOrDown
@@ -801,7 +801,7 @@ PlaylistMSB
 	dc.b	#>SeedPokeyForSpelunker8
 	dc.b	#>SeedPokeyForSpelunker9
 	dc.b	#>SeedPokeyForSpelunker10
-	dc.b	#>SeedPokeyForGoonies
+	dc.b	#>SeedPokeyForGoonies2Song1
 
 PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker1
@@ -814,7 +814,7 @@ PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker8
 	dc.b	#<SeedPokeyForSpelunker9
 	dc.b	#<SeedPokeyForSpelunker10
-	dc.b	#<SeedPokeyForGoonies
+	dc.b	#<SeedPokeyForGoonies2Song1
 
 ;################################################################
 ; CHMAP Pointers to the graphic data are here - $1800 in RAM
@@ -858,8 +858,8 @@ CHMAP_Spelunker9
 CHMAP_Spelunker10
    STR_LEN "Spelunker 10", CHMAP_Spelunker10
 
-CHMAP_Goonies
-   STR_LEN "Goonies", CHMAP_Goonies
+CHMAP_Goonies2Song1
+   STR_LEN "Goonies 2 - Song 1", CHMAP_Goonies2Song1
 
 CHMAP_PressUpOrDown
    STR_LEN "Press up or down", CHMAP_PressUpOrDown
@@ -968,11 +968,11 @@ DL_Spelunker10
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
-DL_Goonies
-	dc.b	<CHMAP_Goonies
+DL_Goonies2Song1
+	dc.b	<CHMAP_Goonies2Song1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
 	dc.b	>CHMAP_RAM_Start
-	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song1
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 

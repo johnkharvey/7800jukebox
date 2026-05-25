@@ -1,9 +1,9 @@
-GOONIES_PLAY_PHRASE1	set	1
-GOONIES_PLAY_PHRASE2	set	1
-GOONIES_PLAY_PHRASE3	set	1
-GOONIES_PLAY_PHRASE4	set	1
-GOONIES_PLAY_PHRASE5	set	1
-GOONIES_PLAY_PHRASE6	set	1
+GOONIES2SONG1_PLAY_PHRASE1	set	1
+GOONIES2SONG1_PLAY_PHRASE2	set	1
+GOONIES2SONG1_PLAY_PHRASE3	set	1
+GOONIES2SONG1_PLAY_PHRASE4	set	1
+GOONIES2SONG1_PLAY_PHRASE5	set	1
+GOONIES2SONG1_PLAY_PHRASE6	set	1
 MUTE_TRACK1		set	0
 MUTE_TRACK2		set	0
 MUTE_TRACK3		set	0
@@ -15,7 +15,7 @@ HIGHSNARE		equ	$07
 SNAREDRUM		equ	$0E
 
 ;=============
-GooniesTrack1
+Goonies2Song1Track1
 ;=============
 ; Uses pokey_notes column P (green)
 
@@ -26,8 +26,8 @@ GooniesTrack1
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<GooniesTrack1
-	dc.b	#>GooniesTrack1
+	dc.b	#<Goonies2Song1Track1
+	dc.b	#>Goonies2Song1Track1
   ELSE
 	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #ARCH24_16FD	; D
@@ -69,7 +69,7 @@ GooniesTrack1
 	dc.b	#$21, #12, #ARCH12_16EX ; G
 	dc.b	#$25, #12, #ARCH12_16EX ; F
 
-GooniesTrack1Restart
+Goonies2Song1Track1Restart
 	; Uses pokey_notes column P (green)
 	dc.b	#$1D, #36,  #ARCH12_16EX ; A
 	dc.b	#$19, #6,   #ARCH12_16EX ; B
@@ -252,12 +252,12 @@ GooniesTrack1Restart
 	dc.b	#$2D, #18, #VOL06REST02 ; D
 
 	dc.b	#$FF
-	dc.b	#<GooniesTrack1Restart
-	dc.b	#>GooniesTrack1Restart
+	dc.b	#<Goonies2Song1Track1Restart
+	dc.b	#>Goonies2Song1Track1Restart
   ENDIF ; (IF MUTE_TRACK1)
 
 ;=============
-GooniesTrack2
+Goonies2Song1Track2
 ;=============
 ; Uses pokey_notes column H (brown)
 
@@ -270,8 +270,8 @@ GooniesTrack2
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<GooniesTrack2
-	dc.b	#>GooniesTrack2
+	dc.b	#<Goonies2Song1Track2
+	dc.b	#>Goonies2Song1Track2
   ELSE
 	; Uses pokey_notes column H (brown)
 	dc.b	#$34, #12, #VOL06REST02 ; D
@@ -314,7 +314,7 @@ GooniesTrack2
 	dc.b	#$70, #6,  #VOL06REST02 ; C#
 	dc.b	#$9F, #12, #VOL06REST02 ; G
 
-GooniesTrack2Restart
+Goonies2Song1Track2Restart
 	dc.b	#$6A, #24, #VOL06REST02 ; D
 	dc.b	#$00, #24, #RESTDEFAULT ; rest
 	dc.b	#$6A, #36, #VOL06REST02 ; D
@@ -578,12 +578,12 @@ GooniesTrack2Restart
 	dc.b	#$5E, #12, #VOL06REST02 ; E
 
 	dc.b	#$FF
-	dc.b	#<GooniesTrack2Restart
-	dc.b	#>GooniesTrack2Restart
+	dc.b	#<Goonies2Song1Track2Restart
+	dc.b	#>Goonies2Song1Track2Restart
   ENDIF ; (IF MUTE_TRACK2)
 
 ;=============
-GooniesTrack3
+Goonies2Song1Track3
 ;=============
 ; Uses pokey_notes column P (green)
 
@@ -594,8 +594,8 @@ GooniesTrack3
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<GooniesTrack3
-	dc.b	#>GooniesTrack3
+	dc.b	#<Goonies2Song1Track3
+	dc.b	#>Goonies2Song1Track3
   ELSE
 	; Uses pokey_notes column P (green)
 	dc.b	#$2D, #24, #ARCH24_16FD	; D
@@ -637,7 +637,7 @@ GooniesTrack3
 	dc.b	#$17, #12, #ARCH12_16EX ; C
 	dc.b	#$14, #12, #ARCH12_16EX ; D
 
-GooniesTrack3Restart
+Goonies2Song1Track3Restart
 
 	; Uses pokey_notes column P (green)
 	dc.b	#$5E, #24, #ARCH24_16FD ; D
@@ -853,12 +853,12 @@ GooniesTrack3Restart
 	dc.b	#$2D, #18, #VOL06REST02 ; D
 
 	dc.b	#$FF
-	dc.b	#<GooniesTrack3Restart
-	dc.b	#>GooniesTrack3Restart
+	dc.b	#<Goonies2Song1Track3Restart
+	dc.b	#>Goonies2Song1Track3Restart
   ENDIF ; (IF MUTE_TRACK3)
 
 ;=============
-GooniesTrack4
+Goonies2Song1Track4
 ;=============
 	; Frequency, length, Effect
 	; $FF means it's over, loop back.
@@ -867,8 +867,8 @@ GooniesTrack4
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<GooniesTrack4
-	dc.b	#>GooniesTrack4
+	dc.b	#<Goonies2Song1Track4
+	dc.b	#>Goonies2Song1Track4
   ELSE
 
 ;BASSDRUM	equ	$0F
@@ -949,7 +949,7 @@ DRUM4FRAMES	equ	14
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES	; snare drum
 	dc.b	#$00, #8, #RESTDEFAULT ; rest
 
-GooniesTrack4Restart
+Goonies2Song1Track4Restart
 	; change up
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES	; snare drum
 	dc.b	#$00, #32, #RESTDEFAULT ; rest
@@ -1357,7 +1357,7 @@ GooniesTrack4Restart
 	dc.b	#$00, #8, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
-	dc.b	#<GooniesTrack4Restart
-	dc.b	#>GooniesTrack4Restart
+	dc.b	#<Goonies2Song1Track4Restart
+	dc.b	#>Goonies2Song1Track4Restart
   ENDIF ; (IF MUTE_TRACK4)
 
