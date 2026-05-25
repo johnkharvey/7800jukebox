@@ -135,7 +135,7 @@ Simply set any of those "0" values to 1 and that track will mute.
 There are 2 ways to proceed:
 
  * Feel free to change any of the example tracks for your own project.
- * Alternatively, check out commit 906080b.  It demonstrates how to add a new file to the Jukebox.
+ * Alternatively, check out commit aca0ce5.  It demonstrates how to add a new file to the Jukebox.
 
 ### Integrating with your own code
 
@@ -143,7 +143,9 @@ There are 2 ways to proceed:
 
 ### Special thanks
 
-I owe a great deal of thanks to Atari Age user "Synthpopalooza" for providing the tools and support for me to learn POKEY sound programming.
+ * I owe a great deal of thanks to Atari Age user "Synthpopalooza" for providing the tools and support for me to learn POKEY sound programming.
+ * https://midi.city for a really easy interface for playing with notes on a keyboard
+ * Audio Overload, a great tool for listening to NSF (Nintendo Sound Files)
 
 ### Errata and Contributions
 
