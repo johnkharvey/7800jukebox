@@ -69,10 +69,9 @@ You can look at these if you want, but they just sort of "work" and are less imp
 
 I typically code on a Mac.  All you should need to do is run the following commands:
 
-`make`
-`make run`
-
-There's also a `make clean` target if you need to start over.
+ * `make`
+ * `make run`
+ * There's also a `make clean` target if you need to start over.
 
 ## Where to begin
 
