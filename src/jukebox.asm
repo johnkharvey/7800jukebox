@@ -115,7 +115,7 @@ PALETTE5		equ	#%00000101
 PALETTE6		equ	#%00000110
 PALETTE7		equ	#%00000111
 
-NUMBER_OF_SONGS		equ	12
+NUMBER_OF_SONGS		equ	13
 
 ;################################################################
 ; Let's define macros here
@@ -733,6 +733,8 @@ DrawScreen
 	BEQ	TextIndexTen
 	CMP	#11
 	BEQ	TextIndexEleven
+	CMP	#12
+	BEQ	TextIndexTwelve
 	; fall-through
 	JMP	TextIndexPressUpOrDown
 TextIndexZero
@@ -780,6 +782,10 @@ TextIndexTen
 	STA	DLL_On_Screen+32
 	JMP	AfterText
 TextIndexEleven
+	LDA	#<DL_Goonies2Song2
+	STA	DLL_On_Screen+32
+	JMP	AfterText
+TextIndexTwelve
 	LDA	#<DL_Goonies2Song3
 	STA	DLL_On_Screen+32
 	JMP	AfterText
@@ -808,6 +814,7 @@ PlaylistMSB
 	dc.b	#>SeedPokeyForSpelunker9
 	dc.b	#>SeedPokeyForSpelunker10
 	dc.b	#>SeedPokeyForGoonies2Song1
+	dc.b	#>SeedPokeyForGoonies2Song2
 	dc.b	#>SeedPokeyForGoonies2Song3
 
 PlaylistLSB
@@ -822,6 +829,7 @@ PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker9
 	dc.b	#<SeedPokeyForSpelunker10
 	dc.b	#<SeedPokeyForGoonies2Song1
+	dc.b	#<SeedPokeyForGoonies2Song2
 	dc.b	#<SeedPokeyForGoonies2Song3
 
 ;################################################################
@@ -868,6 +876,9 @@ CHMAP_Spelunker10
 
 CHMAP_Goonies2Song1
    STR_LEN "Goonies 2 - Song 1", CHMAP_Goonies2Song1
+
+CHMAP_Goonies2Song2
+   STR_LEN "Goonies 2 - Song 2", CHMAP_Goonies2Song2
 
 CHMAP_Goonies2Song3
    STR_LEN "Goonies 2 - Song 3", CHMAP_Goonies2Song3
@@ -984,6 +995,14 @@ DL_Goonies2Song1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
 	dc.b	>CHMAP_RAM_Start
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song1
+	dc.b	50 ; HPos (0-159)
+	dc.b	$00,$00
+
+DL_Goonies2Song2
+	dc.b	<CHMAP_Goonies2Song2
+	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
+	dc.b	>CHMAP_RAM_Start
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song2
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
