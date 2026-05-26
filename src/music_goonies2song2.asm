@@ -1,7 +1,7 @@
 MUTE_TRACK1		set	0
 MUTE_TRACK2		set	0
-MUTE_TRACK3		set	1
-MUTE_TRACK4		set	1
+MUTE_TRACK3		set	0
+MUTE_TRACK4		set	0
 
 ; Drum equates
 BASSDRUM1		equ	$5C
