@@ -682,8 +682,8 @@ Effect04
 	; Effect 04. Pure tone, no effect, volume 4 out of 15
 	; However, in the last 2 frames, zero out volume so we have separation between notes
 	LDA	PokeyInstrument1Countdown,Y
-	CMP	#03
-	BMI	HandleEffect04
+	CMP	#$03
+	BPL	HandleEffect04
 	LDA	#$00
 	JMP	AfterEffectsDone
 HandleEffect04
@@ -697,7 +697,7 @@ Effect05
 	; Effect 05. Pure tone, no effect, volume 8 out of 15
 	; However, in the last 2 frames, zero out volume so we have separation between notes
 	LDA	PokeyInstrument1Countdown,Y
-	CMP	#03
+	CMP	#$03
 	BPL	HandleEffect05
 	LDA	#$00
 	JMP	AfterEffectsDone
@@ -712,7 +712,7 @@ Effect06
 	; Effect 06. Pure tone, no effect, volume 12 out of 15
 	; However, in the last 2 frames, zero out volume so we have separation between notes
 	LDA	PokeyInstrument1Countdown,Y
-	CMP	#03
+	CMP	#$03
 	BPL	HandleEffect06
 	LDA	#$00
 	JMP	AfterEffectsDone
@@ -727,7 +727,7 @@ Effect07
 	; Effect 07. Pure tone, no effect, volume 15 out of 15
 	; However, in the last 2 frames, zero out volume so we have separation between notes
 	LDA	PokeyInstrument1Countdown,Y
-	CMP	#03
+	CMP	#$03
 	BPL	HandleEffect07
 	LDA	#$00
 	JMP	AfterEffectsDone
