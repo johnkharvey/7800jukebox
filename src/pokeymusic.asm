@@ -172,6 +172,7 @@ AUDF5BAK			equ	PokeyRAM+15
 	; Choose 1000 for volume (right in the middle)
 	;==========================================
 
+	include "hdr/pokey_notes.h"
 	include "src/macros_pokey.asm"
 
 ;=========================
