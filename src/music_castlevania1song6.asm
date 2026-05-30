@@ -1,11 +1,11 @@
 CASTLEVANIA1SONG6_PLAY_PHRASE1 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE2 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE3 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE4 set     1
+CASTLEVANIA1SONG6_PLAY_PHRASE2 set     0
+CASTLEVANIA1SONG6_PLAY_PHRASE3 set     0
+CASTLEVANIA1SONG6_PLAY_PHRASE4 set     0
 
-MUTE_TRACK1		set	1
+MUTE_TRACK1		set	0
 MUTE_TRACK2		set	0
-MUTE_TRACK3		set	1
+MUTE_TRACK3		set	0
 MUTE_TRACK4		set	1
 
 ; Drum equates
@@ -25,7 +25,7 @@ Castlevania1Song6Track1
 
   IF MUTE_TRACK1
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Castlevania1Song6Track1
 	dc.b	#>Castlevania1Song6Track1
@@ -33,13 +33,39 @@ Castlevania1Song6Track1
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE1
 	; Uses pokey_notes column P (green)
-	dc.b	#$5E, #24, #ARCH24_16FD	; D
-	dc.b	#$2D, #12, #ARCH12_16EX ; D
-	dc.b	#$5E, #12, #ARCH12_16EX ; D
-	dc.b	#$46, #12, #ARCH12_16EX ; G
-	dc.b	#$3E, #12, #ARCH12_16EX ; A
-	dc.b	#$33, #12, #ARCH12_16EX ; C
-	dc.b	#$2D, #12, #ARCH12_16EX ; D
+        dc.b    #RESTNOSOUND, #112, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #RESTNOSOUND, #112, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_G,  #98, #VOL06REST02 ; G - $46
+        ; Note: for Glissando effects on this track, the following are BAD values
+        ; (popping and loud screeches) so we skip over them in the sequence:
+        ;  - $F4
+        ;  - $D5
+        ;  - $B6
+        ;  - $97
+        ;  - $78
+        ;  - $59
+        ;  - $3A
+        ;  - $1B
+        dc.b    #$42,  #1, #VOL06_CONST ; glissando
+        dc.b    #$3E,  #1, #VOL06_CONST ; glissando
+        dc.b    #$3B,  #1, #VOL06_CONST ; glissando ; definitely avoid $3A as it has bad value
+        dc.b    #$38,  #1, #VOL06_CONST ; glissando
+        dc.b    #$35,  #1, #VOL06_CONST ; glissando
+        dc.b    #$32,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2F,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2C,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2A,  #1, #VOL06_CONST ; glissando
+        dc.b    #$28,  #1, #VOL06_CONST ; glissando
+        dc.b    #$26,  #1, #VOL06_CONST ; glissando
+        dc.b    #$24,  #1, #VOL06_CONST ; glissando
+        dc.b    #$23,  #1, #VOL06_CONST ; glissando
+        dc.b    #$22,  #1, #VOL06_CONST ; glissando
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT5_G,  #112, #VOL06REST02 ; G - $21
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE2
@@ -71,7 +97,7 @@ Castlevania1Song6Track2
 
   IF MUTE_TRACK2
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Castlevania1Song6Track2
 	dc.b	#>Castlevania1Song6Track2
@@ -436,14 +462,70 @@ Castlevania1Song6Track3
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE1
         ; Uses pokey_notes column P (green)
-        dc.b    #$00, #14, #RESTDEFAULT ; rest
-        dc.b    #$5E, #14, #VOL04REST02 ; D
-        dc.b    #$5E, #14, #VOL04REST02 ; D
-        dc.b    #$5E, #14, #VOL04REST02 ; D
-        dc.b    #$53, #14, #VOL04REST02 ; E
-        dc.b    #$4F, #14, #VOL04REST02 ; F
-        dc.b    #$46, #14, #VOL04REST02 ; G
-        dc.b    #$4F, #14, #VOL04REST02 ; F
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_G,  #7, #VOL06REST02 ; G
+        dc.b    #MAIN_OCT3_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_B,  #7, #VOL06REST02 ; B
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06REST02 ; C
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06REST02 ; C
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_G,  #7, #VOL06REST02 ; G
+        dc.b    #MAIN_OCT3_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT3_B,  #7, #VOL06REST02 ; B
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT5_C,  #98, #VOL06REST02 ; C - $33.
+        ; Note: for Glissando effects on this track, the following are BAD values
+        ; (popping and loud screeches) so we skip over them in the sequence:
+        ;  - $F4
+        ;  - $D5
+        ;  - $B6
+        ;  - $97
+        ;  - $78
+        ;  - $59
+        ;  - $3A
+        ;  - $1B
+        dc.b    #$31,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2F,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2D,  #1, #VOL06_CONST ; glissando
+        dc.b    #$2B,  #1, #VOL06_CONST ; glissando
+        dc.b    #$29,  #1, #VOL06_CONST ; glissando
+        dc.b    #$27,  #1, #VOL06_CONST ; glissando
+        dc.b    #$25,  #1, #VOL06_CONST ; glissando
+        dc.b    #$23,  #1, #VOL06_CONST ; glissando
+        dc.b    #$21,  #1, #VOL06_CONST ; glissando
+        dc.b    #$1F,  #1, #VOL06_CONST ; glissando
+        dc.b    #$1D,  #1, #VOL06_CONST ; glissando
+        dc.b    #$1C,  #1, #VOL06_CONST ; glissando; skip over bad 1B value
+        dc.b    #$1A,  #1, #VOL06_CONST ; glissando
+        dc.b    #$19,  #1, #VOL06_CONST ; glissando
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT6_C,  #112, #VOL06REST02 ; C - $17
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE2
