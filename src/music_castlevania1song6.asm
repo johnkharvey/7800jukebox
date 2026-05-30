@@ -600,8 +600,8 @@ Castlevania1Song6Track3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_GS, #17, #VOL02_CONST ; G#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #17, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_DS, #24, #VOL02_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT4_GS, #10, #VOL02_CONST ; G#
@@ -614,8 +614,8 @@ Castlevania1Song6Track3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_AS, #17, #VOL02_CONST ; A#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #17, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_F,  #24, #VOL02_CONST ; F
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT4_AS, #10, #VOL02_CONST ; A#
@@ -696,8 +696,8 @@ Castlevania1Song6Track3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_GS, #17, #VOL02_CONST ; G#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #17, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_DS, #24, #VOL02_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT4_GS, #10, #VOL02_CONST ; G#
@@ -710,8 +710,8 @@ Castlevania1Song6Track3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_AS, #17, #VOL02_CONST ; A#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #17, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_F,  #24, #VOL02_CONST ; F
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT4_AS, #10, #VOL02_CONST ; A#
@@ -724,16 +724,16 @@ Castlevania1Song6Track3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_G,  #17, #VOL02_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_B,  #17, #VOL02_CONST ; B
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_B,  #7,  #VOL02_CONST ; B
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_D,  #66, #VOL02_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_D,  #17, #VOL02_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #17, #VOL02_CONST ; F
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #7,  #VOL02_CONST ; F
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_G,  #45, #VOL02_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_G,  #7, #VOL02_CONST ; G
