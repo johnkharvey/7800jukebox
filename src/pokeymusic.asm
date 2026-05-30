@@ -226,6 +226,8 @@ InitializeAndSilencePokey
 	include "src/music_goonies2song3.asm"
     SEED_POKEY Goonies2Song4
 	include "src/music_goonies2song4.asm"
+    SEED_POKEY Castlevania1Song6
+ 	include "src/music_castlevania1song6.asm"
 
 ;==============
 PlayPokeyMusic
