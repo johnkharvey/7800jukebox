@@ -739,215 +739,215 @@ Castlevania1Song6Track3
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE2
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_G,  #10, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT5_G,  #10, #VOL06_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT5_DS, #17, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
+        dc.b    #MAIN_OCT5_DS, #17, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_D,  #7,  #VOL02_CONST ; D
-        dc.b    #MAIN_OCT4_DS, #7,  #VOL02_CONST ; D#
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_DS, #17, #VOL02_CONST ; D#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_G,  #10, #VOL02_CONST ; G
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT5_DS, #17, #VOL02_CONST ; D#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_D,  #7,  #VOL02_CONST ; D
-        dc.b    #MAIN_OCT4_DS, #7,  #VOL02_CONST ; D#
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_D,  #7,  #VOL04_CONST ; D
+        dc.b    #MAIN_OCT4_DS, #7,  #VOL04_CONST ; D#
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_DS, #17, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_DS, #17, #VOL04_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_GS, #17, #VOL02_CONST ; G#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_DS, #24, #VOL02_CONST ; D#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_GS, #10, #VOL02_CONST ; G#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_DS, #10, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_AS, #17, #VOL02_CONST ; A#
+        dc.b    #MAIN_OCT5_G,  #10, #VOL06_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #24, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_AS, #10, #VOL02_CONST ; A#
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
+        dc.b    #MAIN_OCT5_DS, #17, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_G,  #10, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT5_DS, #17, #VOL02_CONST ; D#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_D,  #7,  #VOL02_CONST ; D
-        dc.b    #MAIN_OCT4_DS, #7,  #VOL02_CONST ; D#
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_D,  #7,  #VOL04_CONST ; D
+        dc.b    #MAIN_OCT4_DS, #7,  #VOL04_CONST ; D#
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_DS, #17, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_DS, #17, #VOL04_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_G,  #10, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT4_GS, #17, #VOL06_CONST ; G#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_DS, #24, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT4_GS, #10, #VOL06_CONST ; G#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT5_DS, #17, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_DS, #10, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_AS, #17, #VOL06_CONST ; A#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #24, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_AS, #10, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT5_G,  #10, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
+        dc.b    #MAIN_OCT5_DS, #17, #VOL06_CONST ; D#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_D,  #7,  #VOL02_CONST ; D
-        dc.b    #MAIN_OCT4_DS, #7,  #VOL02_CONST ; D#
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_D,  #7,  #VOL04_CONST ; D
+        dc.b    #MAIN_OCT4_DS, #7,  #VOL04_CONST ; D#
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #7,  #VOL02_CONST ; C
-        dc.b    #MAIN_OCT4_DS, #17, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_DS, #17, #VOL04_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_GS, #17, #VOL02_CONST ; G#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #7,  #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_DS, #24, #VOL02_CONST ; D#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_GS, #10, #VOL02_CONST ; G#
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_DS, #10, #VOL02_CONST ; D#
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_AS, #17, #VOL02_CONST ; A#
+        dc.b    #MAIN_OCT5_G,  #10, #VOL06_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
-        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #24, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_AS, #10, #VOL02_CONST ; A#
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #10, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
+        dc.b    #MAIN_OCT5_DS, #17, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #10, #VOL02_CONST ; F
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-
-        ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_G,  #17, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_B,  #7,  #VOL02_CONST ; B
-        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #66, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_D,  #17, #VOL02_CONST ; D
+        dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_D,  #7,  #VOL04_CONST ; D
+        dc.b    #MAIN_OCT4_DS, #7,  #VOL04_CONST ; D#
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #7,  #VOL02_CONST ; F
+        dc.b    #MAIN_OCT4_C,  #7,  #VOL04_CONST ; C
+        dc.b    #MAIN_OCT4_DS, #17, #VOL04_CONST ; D#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_D,  #10, #VOL04_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_C,  #10, #VOL04_CONST ; C
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_GS, #17, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_G,  #45, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT5_DS, #24, #VOL06_CONST ; D#
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_G,  #7, #VOL02_CONST ; G
-        dc.b    #MAIN_OCT5_B,  #7, #VOL02_CONST ; B
-        dc.b    #MAIN_OCT6_C,  #7, #VOL02_CONST ; C
+        dc.b    #MAIN_OCT4_GS, #10, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_C,  #10, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_DS, #10, #VOL06_CONST ; D#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_AS, #17, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #24, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_AS, #10, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #10, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT4_G,  #17, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_B,  #7,  #VOL06_CONST ; B
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #66, #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column P (green)
+        dc.b    #MAIN_OCT5_D,  #17, #VOL06_CONST ; D
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_F,  #7,  #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_G,  #45, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_G,  #7, #VOL06_CONST ; G
+        dc.b    #MAIN_OCT5_B,  #7, #VOL06_CONST ; B
+        dc.b    #MAIN_OCT6_C,  #7, #VOL06_CONST ; C
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE3
