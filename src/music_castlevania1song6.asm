@@ -2,6 +2,7 @@ CASTLEVANIA1SONG6_PLAY_PHRASE1 set     1
 CASTLEVANIA1SONG6_PLAY_PHRASE2 set     1
 CASTLEVANIA1SONG6_PLAY_PHRASE3 set     1
 CASTLEVANIA1SONG6_PLAY_PHRASE4 set     1
+CASTLEVANIA1SONG6_PLAY_PHRASE5 set     1
 
 MUTE_TRACK1		set	1
 MUTE_TRACK2		set	0
@@ -37,7 +38,11 @@ Castlevania1Song6Track1
 
         ; Uses pokey_notes column P (green)
         dc.b    #RESTNOSOUND, #112, #RESTDEFAULT ; rest
+  ENDIF
 
+Castlevania1Song6Track1Restart
+
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_G,  #98, #VOL06REST02 ; G - $46
         ; Note: for Glissando effects on this track, the following are BAD values
@@ -281,17 +286,17 @@ Castlevania1Song6Track1
         dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
-        ; Uses pokey_notes column P (green)
-  ENDIF
-
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
         ; Uses pokey_notes column P (green)
   ENDIF
 
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE5
+        ; Uses pokey_notes column P (green)
+  ENDIF
+
 	dc.b	#$FF
-	dc.b	#<Castlevania1Song6Track1
-	dc.b	#>Castlevania1Song6Track1
+	dc.b	#<Castlevania1Song6Track1Restart
+	dc.b	#>Castlevania1Song6Track1Restart
   ENDIF ; (IF MUTE_TRACK1)
 
 ;=============
@@ -349,6 +354,11 @@ Castlevania1Song6Track2
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
         dc.b    #BASS_OCT1_B,  #7, #VOL06REST02 ; B
 
+  ENDIF
+
+Castlevania1Song6Track2Restart
+
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
         ; Uses pokey_notes column H (brown)
         dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
@@ -640,7 +650,7 @@ Castlevania1Song6Track2
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE4
         ; Uses pokey_notes column H (brown)
         dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
@@ -787,7 +797,7 @@ Castlevania1Song6Track2
         dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE4
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE5
         ; Uses pokey_notes column H (brown)
         dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
@@ -898,8 +908,8 @@ Castlevania1Song6Track2
   ENDIF
 
 	dc.b	#$FF
-	dc.b	#<Castlevania1Song6Track2
-	dc.b	#>Castlevania1Song6Track2
+	dc.b	#<Castlevania1Song6Track2Restart
+	dc.b	#>Castlevania1Song6Track2Restart
   ENDIF ; (IF MUTE_TRACK2)
 
 ;=============
@@ -954,7 +964,11 @@ Castlevania1Song6Track3
         dc.b    #MAIN_OCT3_GS, #7, #VOL02_CONST ; G#
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT3_B,  #7, #VOL02REST02 ; B
+  ENDIF
 
+Castlevania1Song6Track3Restart
+
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_C,  #98, #VOL06REST02 ; C - $33.
         ; Note: for Glissando effects on this track, the following are BAD values
@@ -1199,7 +1213,7 @@ Castlevania1Song6Track3
         dc.b    #MAIN_OCT5_B,  #7,  #VOL06_CONST ; B
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE4
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_C,  #7, #VOL06_CONST ; C
         dc.b    #MAIN_OCT5_G,  #7, #VOL06_CONST ; G
@@ -1336,7 +1350,7 @@ Castlevania1Song6Track3
         dc.b    #MAIN_OCT5_B,  #14, #VOL06_CONST ; B
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE4
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE5
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_DS, #7,  #VOL06_CONST ; D#
         dc.b    #MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
@@ -1385,8 +1399,8 @@ Castlevania1Song6Track3
   ENDIF
 
 	dc.b	#$FF
-	dc.b	#<Castlevania1Song6Track3
-	dc.b	#>Castlevania1Song6Track3
+	dc.b	#<Castlevania1Song6Track3Restart
+	dc.b	#>Castlevania1Song6Track3Restart
   ENDIF ; (IF MUTE_TRACK3)
 
 ;=============
@@ -1445,6 +1459,8 @@ Castlevania1Song6Track4
         dc.b    #$00, #3, #RESTDEFAULT ; rest
   ENDIF
 
+Castlevania1Song6Track4Restart
+
   IF CASTLEVANIA1SONG6_PLAY_PHRASE2
   ENDIF
 
@@ -1454,8 +1470,11 @@ Castlevania1Song6Track4
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
   ENDIF
 
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE5
+  ENDIF
+
 	dc.b	#$FF
-	dc.b	#<Castlevania1Song6Track4
-	dc.b	#>Castlevania1Song6Track4
+	dc.b	#<Castlevania1Song6Track4Restart
+	dc.b	#>Castlevania1Song6Track4Restart
   ENDIF ; (IF MUTE_TRACK4)
 
