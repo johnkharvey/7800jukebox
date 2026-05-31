@@ -1,11 +1,11 @@
 CASTLEVANIA1SONG6_PLAY_PHRASE1 set     1
 CASTLEVANIA1SONG6_PLAY_PHRASE2 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE3 set     0
-CASTLEVANIA1SONG6_PLAY_PHRASE4 set     0
+CASTLEVANIA1SONG6_PLAY_PHRASE3 set     1
+CASTLEVANIA1SONG6_PLAY_PHRASE4 set     1
 
-MUTE_TRACK1		set	0
+MUTE_TRACK1		set	1
 MUTE_TRACK2		set	0
-MUTE_TRACK3		set	0
+MUTE_TRACK3		set	1
 MUTE_TRACK4		set	1
 
 ; Drum equates
@@ -642,10 +642,259 @@ Castlevania1Song6Track2
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE3
         ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT3_C,  #7, #VOL06_CONST ; C
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06REST02 ; A#
+        dc.b    #BASS_OCT2_AS, #7, #VOL06_CONST ; A#
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06REST02 ; G#
+        dc.b    #BASS_OCT2_GS, #7, #VOL06_CONST ; G#
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT2_G,  #7, #VOL06_CONST ; G
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
         ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_F,  #7, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_F,  #7, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_F,  #7, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_F,  #7, #VOL06_CONST ; F
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_AS, #7, #VOL06_CONST ; A#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_B,  #7, #VOL06REST02 ; B
+
+        ; Uses pokey_notes column H (brown)
+        dc.b    #BASS_OCT2_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06REST02 ; C
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_G,  #7, #VOL06REST02 ; G
+        dc.b    #BASS_OCT1_G,  #7, #VOL06_CONST ; G
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_GS, #7, #VOL06_CONST ; G#
+        dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
+        dc.b    #BASS_OCT1_B,  #7, #VOL06REST02 ; B
   ENDIF
 
 	dc.b	#$FF
