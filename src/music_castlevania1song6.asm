@@ -73,7 +73,7 @@ Castlevania1Song6Track1Restart
         dc.b    #MAIN_OCT5_G,  #112, #VOL06REST02 ; G - $21
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_C,  #10, #VOL02_CONST ; C
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
@@ -396,7 +396,7 @@ Castlevania1Song6Track2Restart
         dc.b    #BASS_OCT1_B,  #7, #VOL06REST02 ; B
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
         ; Uses pokey_notes column H (brown)
         dc.b    #BASS_OCT2_C,  #7, #VOL06_CONST ; C
         dc.b    #RESTNOSOUND,  #7, #RESTDEFAULT ; rest
@@ -1000,7 +1000,7 @@ Castlevania1Song6Track3Restart
         dc.b    #MAIN_OCT6_C,  #112, #VOL06REST02 ; C - $17
   ENDIF
 
-  IF CASTLEVANIA1SONG6_PLAY_PHRASE2
+  IF CASTLEVANIA1SONG6_PLAY_PHRASE3
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_G,  #10, #VOL06_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
