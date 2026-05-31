@@ -1,8 +1,8 @@
-CASTLEVANIA1SONG6_PLAY_PHRASE1 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE2 set     1
+CASTLEVANIA1SONG6_PLAY_PHRASE1 set     0
+CASTLEVANIA1SONG6_PLAY_PHRASE2 set     0
 CASTLEVANIA1SONG6_PLAY_PHRASE3 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE4 set     1
-CASTLEVANIA1SONG6_PLAY_PHRASE5 set     1
+CASTLEVANIA1SONG6_PLAY_PHRASE4 set     0
+CASTLEVANIA1SONG6_PLAY_PHRASE5 set     0
 
 MUTE_TRACK1		set	0
 MUTE_TRACK2		set	0
@@ -271,19 +271,22 @@ Castlevania1Song6Track1Restart
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT4_G,  #7,  #VOL02_CONST ; G
         dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_G,  #66, #VOL02_CONST ; G
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT4_G,  #42, #VOL02_CONST ; G
+        dc.b    #MAIN_OCT4_G,  #21, #VOL04_CONST ; G
+        dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT4_G,  #17, #VOL02_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
         dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
         dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #45, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #28, #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL04_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #10, #VOL06_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #7,  #VOL02REST02 ; D
-        dc.b    #MAIN_OCT5_D,  #7,  #VOL02REST02 ; D
-        dc.b    #MAIN_OCT5_D,  #7,  #VOL02_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL06REST02 ; D
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL06REST02 ; D
+        dc.b    #MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
@@ -1346,23 +1349,27 @@ Castlevania1Song6Track3Restart
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_G,  #17, #VOL06_CONST ; G
+        dc.b    #MAIN_OCT4_G,  #17, #VOL04_CONST ; G
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT4_B,  #7,  #VOL06_CONST ; B
+        dc.b    #MAIN_OCT4_B,  #7,  #VOL04_CONST ; B
         dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_D,  #66, #VOL06_CONST ; D
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #28, #VOL04_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #14, #VOL06_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #21, #VOL08_CONST ; D
+        dc.b    #RESTNOSOUND,  #7,  #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_D,  #17, #VOL06_CONST ; D
+        dc.b    #MAIN_OCT5_D,  #17, #VOL04_CONST ; D
         dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_F,  #7,  #VOL06_CONST ; F
+        dc.b    #MAIN_OCT5_F,  #7,  #VOL04_CONST ; F
         dc.b    #RESTNOSOUND,  #14, #RESTDEFAULT ; rest
-        dc.b    #MAIN_OCT5_G,  #45, #VOL06_CONST ; G
-        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_G,  #28, #VOL04_CONST ; G
         dc.b    #MAIN_OCT5_G,  #7,  #VOL06_CONST ; G
-        dc.b    #MAIN_OCT5_A,  #7,  #VOL06_CONST ; A
-        dc.b    #MAIN_OCT5_B,  #7,  #VOL06_CONST ; B
+        dc.b    #MAIN_OCT5_G,  #10, #VOL08_CONST ; G
+        dc.b    #RESTNOSOUND,  #4,  #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_G,  #7,  #VOL08_CONST ; G
+        dc.b    #MAIN_OCT5_A,  #7,  #VOL08_CONST ; A
+        dc.b    #MAIN_OCT5_B,  #7,  #VOL08_CONST ; B
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
