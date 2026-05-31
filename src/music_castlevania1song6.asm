@@ -1152,7 +1152,7 @@ Castlevania1Song6Track3Restart
         dc.b    #$19,  #1, #VOL06_CONST ; glissando
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT6_C,  #112, #VOL06REST02 ; C - $17
+        dc.b    #MAIN_OCT6_C,  #112, #VOL08REST02 ; C - $17
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE3
