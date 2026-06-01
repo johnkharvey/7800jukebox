@@ -104,8 +104,8 @@ Spelunker7Track3
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker7Track4
-	dc.b	#>Spelunker7Track4
+	dc.b	#<Spelunker7Track3
+	dc.b	#>Spelunker7Track3
   ELSE
 
 Spelunker7Track3Stops

@@ -197,8 +197,8 @@ Spelunker5Track3
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker5Track4
-	dc.b	#>Spelunker5Track4
+	dc.b	#<Spelunker5Track3
+	dc.b	#>Spelunker5Track3
   ELSE
 
 	; This track has no music

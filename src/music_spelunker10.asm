@@ -122,8 +122,8 @@ Spelunker10Track3
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker10Track4
-	dc.b	#>Spelunker10Track4
+	dc.b	#<Spelunker10Track3
+	dc.b	#>Spelunker10Track3
   ELSE
 
 	; Uses pokey_notes column P (green)

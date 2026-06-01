@@ -360,8 +360,8 @@ Spelunker8Track3
 	; HACK - turn these lines to shut off music for this track
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
-	dc.b	#<Spelunker8Track4
-	dc.b	#>Spelunker8Track4
+	dc.b	#<Spelunker8Track3
+	dc.b	#>Spelunker8Track3
   ELSE
 
 Spelunker8Track3Stops
