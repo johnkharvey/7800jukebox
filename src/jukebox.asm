@@ -515,7 +515,7 @@ Copy_DLs_Loop:
 	;==================================
 Copy_DLLs
 	;===================
-	; Copy all 256dc.bs of DLL data from code into RAM at DLLRam.
+	; Copy all 256 bytes of DLL data from code into RAM at DLLRam.
 	;===================
 	LDX	#0
 Copy_DLL_Loop:
@@ -936,7 +936,7 @@ DL_Empty
 DL_Space
 	dc.b	<CHMAP_Space
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode. 
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Space
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Space
 	dc.b	0 ; HPos (0-159)
 	dc.b	$00,$00
@@ -946,7 +946,7 @@ DL_Space
 DL_Spelunker1
 	dc.b	<CHMAP_Spelunker1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker1
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker1
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -954,7 +954,7 @@ DL_Spelunker1
 DL_Spelunker2
 	dc.b	<CHMAP_Spelunker2
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker2
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker2
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -962,7 +962,7 @@ DL_Spelunker2
 DL_Spelunker3
 	dc.b	<CHMAP_Spelunker3
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker3
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker3
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -970,7 +970,7 @@ DL_Spelunker3
 DL_Spelunker4
 	dc.b	<CHMAP_Spelunker4
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker4
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker4
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -978,7 +978,7 @@ DL_Spelunker4
 DL_Spelunker5
 	dc.b	<CHMAP_Spelunker5
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker5
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker5
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -986,7 +986,7 @@ DL_Spelunker5
 DL_Spelunker6
 	dc.b	<CHMAP_Spelunker6
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker6
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker6
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -994,7 +994,7 @@ DL_Spelunker6
 DL_Spelunker7
 	dc.b	<CHMAP_Spelunker7
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker7
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker7
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1002,7 +1002,7 @@ DL_Spelunker7
 DL_Spelunker8
 	dc.b	<CHMAP_Spelunker8
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker8
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker8
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1010,7 +1010,7 @@ DL_Spelunker8
 DL_Spelunker9
 	dc.b	<CHMAP_Spelunker9
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker9
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker9
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1018,7 +1018,7 @@ DL_Spelunker9
 DL_Spelunker10
 	dc.b	<CHMAP_Spelunker10
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Spelunker10
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Spelunker10
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1026,7 +1026,7 @@ DL_Spelunker10
 DL_Goonies2Song1
 	dc.b	<CHMAP_Goonies2Song1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Goonies2Song1
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song1
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1034,7 +1034,7 @@ DL_Goonies2Song1
 DL_Goonies2Song2
 	dc.b	<CHMAP_Goonies2Song2
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Goonies2Song2
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song2
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1042,7 +1042,7 @@ DL_Goonies2Song2
 DL_Goonies2Song3
 	dc.b	<CHMAP_Goonies2Song3
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Goonies2Song3
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song3
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1050,7 +1050,7 @@ DL_Goonies2Song3
 DL_Goonies2Song4
 	dc.b	<CHMAP_Goonies2Song4
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Goonies2Song4
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Goonies2Song4
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1058,7 +1058,7 @@ DL_Goonies2Song4
 DL_Castlevania1Song6
 	dc.b	<CHMAP_Castlevania1Song6
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Castlevania1Song6
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Castlevania1Song6
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1066,7 +1066,7 @@ DL_Castlevania1Song6
 DL_RBIBaseball1Song1
 	dc.b	<CHMAP_RBIBaseball1Song1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_RBIBaseball1Song1
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_RBIBaseball1Song1
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1074,7 +1074,7 @@ DL_RBIBaseball1Song1
 DL_PressUpOrDown
 	dc.b	<CHMAP_PressUpOrDown
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_PressUpOrDown
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_PressUpOrDown
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
@@ -1084,7 +1084,7 @@ DL_PressUpOrDown
 DL_Jukebox
 	dc.b	<CHMAP_Jukebox
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
-	dc.b	>CHMAP_RAM_Start
+	dc.b	>CHMAP_Jukebox
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_Jukebox
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
