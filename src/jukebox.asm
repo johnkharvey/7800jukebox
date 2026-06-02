@@ -52,11 +52,17 @@ CHMAP_RAM_Start			ds	256	;	$1800-$18FF
 	ORG	$1900
 ;################################################################
 
-DL_RAM_Start			ds	256	;	$1900-$19FF
 
 ;################################################################
 ; Other RAM
 	ORG	#$1A00
+;################################################################
+
+DL_RAM_Start			ds	256	;	$1900-$19FF
+
+;################################################################
+; Other RAM
+	ORG	#$1B00
 ;################################################################
 
 
@@ -493,9 +499,14 @@ Copy_CHMAPs:
 	LDX	#$00
 Copy_CHMAPs_Loop:
 	LDA	$e000,X
-	STA	$1800,X
+	STA	$1800,X ; CHMAP_RAM_Start
 	INX
 	BNE	Copy_CHMAPs_Loop
+Copy_CHMAPs_Loop2:
+	LDA	$e100,X
+	STA	$1900,X ; CHMAP_RAM_Start+$100
+	INX
+	BNE	Copy_CHMAPs_Loop2
 	RTS
 
 	;==================================================
@@ -504,8 +515,8 @@ Copy_CHMAPs_Loop:
 Copy_DLs:
 	LDX	#$00
 Copy_DLs_Loop:
-	LDA	$E100,X
-	STA	$1900,X
+	LDA	$E200,X
+	STA	$1A00,X ; DL_RAM_Start
 	INX
 	BNE	Copy_DLs_Loop
 	RTS
@@ -869,34 +880,34 @@ CHMAP_Space
 ;===========
 
 CHMAP_Spelunker1
-   STR_LEN "Spelunker 1", CHMAP_Spelunker1
+   STR_LEN "Spelunker - Song 1", CHMAP_Spelunker1
 
 CHMAP_Spelunker2
-   STR_LEN "Spelunker 2", CHMAP_Spelunker2
+   STR_LEN "Spelunker - Song 2", CHMAP_Spelunker2
 
 CHMAP_Spelunker3
-   STR_LEN "Spelunker 3", CHMAP_Spelunker3
+   STR_LEN "Spelunker - Song 3", CHMAP_Spelunker3
 
 CHMAP_Spelunker4
-   STR_LEN "Spelunker 4", CHMAP_Spelunker4
+   STR_LEN "Spelunker - Song 4", CHMAP_Spelunker4
 
 CHMAP_Spelunker5
-   STR_LEN "Spelunker 5", CHMAP_Spelunker5
+   STR_LEN "Spelunker - Song 5", CHMAP_Spelunker5
 
 CHMAP_Spelunker6
-   STR_LEN "Spelunker 6", CHMAP_Spelunker6
+   STR_LEN "Spelunker - Song 6", CHMAP_Spelunker6
 
 CHMAP_Spelunker7
-   STR_LEN "Spelunker 7", CHMAP_Spelunker7
+   STR_LEN "Spelunker - Song 7", CHMAP_Spelunker7
 
 CHMAP_Spelunker8
-   STR_LEN "Spelunker 8", CHMAP_Spelunker8
+   STR_LEN "Spelunker - Song 8", CHMAP_Spelunker8
 
 CHMAP_Spelunker9
-   STR_LEN "Spelunker 9", CHMAP_Spelunker9
+   STR_LEN "Spelunker - Song 9", CHMAP_Spelunker9
 
 CHMAP_Spelunker10
-   STR_LEN "Spelunker 10", CHMAP_Spelunker10
+   STR_LEN "Spelunker - Song 10", CHMAP_Spelunker10
 
 CHMAP_Goonies2Song1
    STR_LEN "Goonies 2 - Song 1", CHMAP_Goonies2Song1
@@ -925,10 +936,10 @@ CHMAP_Jukebox
    STR_LEN "Jukebox", CHMAP_Jukebox
 
 ;===================================
-; The DL starts here - $1900 in RAM
+; The DL starts here - $1A00 in RAM
 ;===================================
 
-	ORG	$E100
+	ORG	$E200
 
 DL_Empty
 	dc.b	$00,$00
@@ -1100,10 +1111,10 @@ DL_ScreenLine1
 	dc.b	$00,$00
 
 ;=====================================
-; The DLL starts here - $1A00 in RAM
+; The DLL starts here - $1B00 in RAM
 ;=====================================
 
-	ORG	$E200
+	ORG	$E300
 
 DLL_PAL:
 	dc.b	$00, >DL_Empty, <DL_Empty	; 25 extra blank lines for PAL
