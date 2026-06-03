@@ -15,7 +15,7 @@ DEVKIT_VERSION=0.20.1
 DEVKIT_URL=http://7800.8bitdev.org/images/6/60/7800AsmDevKit-0.20.1-osx-x64.tar.gz
 
 # Release info
-RELEASE_VERSION=1.0.3
+RELEASE_VERSION=1.0.4
 
 #=========
 # Aliases
