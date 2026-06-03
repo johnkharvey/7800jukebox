@@ -148,5 +148,5 @@ release:	clean all
 	cp out/jukebox.bin out/jukebox_${RELEASE_VERSION}.bin
 	cp out/jukebox.a78 out/jukebox_${RELEASE_VERSION}.a78
 	cp out/jukebox.symbol.txt out/jukebox_${RELEASE_VERSION}.symbol.txt
-	cp out/jukebox.annotated_source.txt out/jukebox.annotated_source_${RELEASE_VERSION}.txt
-	gh release create ${RELEASE_VERSION} out/jukebox_${RELEASE_VERSION}*
+	cp out/jukebox.annotated_source.txt out/jukebox_${RELEASE_VERSION}.annotated_source.txt
+	gh release create ${RELEASE_VERSION} out/jukebox_${RELEASE_VERSION}* --draft --latest --prerelease --title "${RELEASE_VERSION release}" --notes-file release_notes.md
