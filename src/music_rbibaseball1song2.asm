@@ -30,50 +30,50 @@ RBIBaseball1Song2Track1
 
   IF RBIBASEBALL1SONG2_PLAY_PHRASE1
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
-        dc.b    #MAIN_OCT4_G,  #18, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
+        dc.b    #MAIN_OCT4_G,  #18, #ARCH24_16FD ; G
         dc.b    #MAIN_OCT4_G,  #6,  #ARCH12_16EX ; G
         dc.b    #MAIN_OCT4_B,  #12, #ARCH12_16EX ; B
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
         dc.b    #MAIN_OCT4_D,  #12, #ARCH12_16EX ; D
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
-        dc.b    #MAIN_OCT4_G,  #18, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
+        dc.b    #MAIN_OCT4_G,  #18, #ARCH24_16FD ; G
         dc.b    #MAIN_OCT4_G,  #6,  #ARCH12_16EX ; G
         dc.b    #MAIN_OCT4_B,  #12, #ARCH12_16EX ; B
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
         dc.b    #MAIN_OCT4_D,  #12, #ARCH12_16EX ; D
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
-        dc.b    #MAIN_OCT4_G,  #18, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
+        dc.b    #MAIN_OCT4_G,  #18, #ARCH24_16FD ; G
         dc.b    #MAIN_OCT4_G,  #6,  #ARCH12_16EX ; G
         dc.b    #MAIN_OCT4_B,  #12, #ARCH12_16EX ; B
-        dc.b    #MAIN_OCT4_G,  #24, #ARCH12_16EX ; G
+        dc.b    #MAIN_OCT4_G,  #24, #ARCH48_24FD ; G
         dc.b    #MAIN_OCT4_B,  #12, #ARCH12_16EX ; B
 
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_D,  #72, #ARCH96_72FD ; D
-        dc.b    #MAIN_OCT5_DS, #24, #ARCH12_16EX ; D#
+        dc.b    #MAIN_OCT5_DS, #24, #ARCH24_16FD ; D#
   ENDIF
 
   IF RBIBASEBALL1SONG2_PLAY_PHRASE2
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_E,  #18, #ARCH12_16EX ; E
+        dc.b    #MAIN_OCT5_E,  #18, #ARCH24_16FD ; E
         dc.b    #MAIN_OCT5_E,  #6,  #ARCH12_16EX ; E
         dc.b    #MAIN_OCT5_E,  #12, #ARCH12_16EX ; E
         dc.b    #MAIN_OCT5_C,  #12, #ARCH12_16EX ; C
-        dc.b    #MAIN_OCT5_E,  #12, #ARCH12_16EX ; E
-        dc.b    #RESTNOSOUND,  #36, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_E,  #24, #ARCH24_16FD ; E
+        dc.b    #RESTNOSOUND,  #24, #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT5_D,  #18, #ARCH12_16EX ; D
+        dc.b    #MAIN_OCT5_D,  #18, #ARCH24_16FD ; D
         dc.b    #MAIN_OCT5_D,  #6,  #ARCH12_16EX ; D
         dc.b    #MAIN_OCT5_D,  #12, #ARCH12_16EX ; D
         dc.b    #MAIN_OCT4_B,  #12, #ARCH12_16EX ; B
-        dc.b    #MAIN_OCT5_D,  #12, #ARCH12_16EX ; D
-        dc.b    #RESTNOSOUND,  #36, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #24, #ARCH24_16FD ; D
+        dc.b    #RESTNOSOUND,  #24, #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
         dc.b    #MAIN_OCT5_C,  #12, #ARCH12_16EX ; C
@@ -86,11 +86,11 @@ RBIBaseball1Song2Track1
         dc.b    #RESTNOSOUND,  #12, #RESTDEFAULT ; rest
 
         ; Uses pokey_notes column P (green)
-        dc.b    #MAIN_OCT4_A,  #24, #ARCH12_16EX ; A
-        dc.b    #MAIN_OCT4_A,  #18, #ARCH12_16EX ; A
+        dc.b    #MAIN_OCT4_A,  #24, #ARCH24_16FD ; A
+        dc.b    #MAIN_OCT4_A,  #18, #ARCH24_16FD ; A
         dc.b    #MAIN_OCT4_A,  #6,  #ARCH12_16EX ; A
-        dc.b    #MAIN_OCT5_D,  #12, #ARCH12_16EX ; D
-        dc.b    #RESTNOSOUND,  #36, #RESTDEFAULT ; rest
+        dc.b    #MAIN_OCT5_D,  #24, #ARCH24_16FD ; D
+        dc.b    #RESTNOSOUND,  #24, #RESTDEFAULT ; rest
   ENDIF
 
 	dc.b	#$FF
