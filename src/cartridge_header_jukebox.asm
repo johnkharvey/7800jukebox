@@ -76,7 +76,7 @@
 	; 10 = AtariVox/SaveKey
 	; 11 = SNES2Atari
 	; 12 = Mega7800
-	dc.b	10
+	dc.b	0
 
 	; TV type 	1 byte 	57 / 0x39
 	; bit 0 : 0=NTSC, 1=PAL
