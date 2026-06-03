@@ -37,7 +37,7 @@ IndirPtr			ds	2	;	$55-$56
 ; End src/pokeymusic.asm items
 ;======================================-
 
-; Canary RAM address, courtesy of Atariage user RevEng
+; Canary RAM address, courtesy of Atariage user @RevEng
 Canary				ds	1	;	$57
 
 ;################################################################
@@ -58,7 +58,7 @@ CHMAP_RAM_Start			ds	256	;	$1800-$18FF
 	ORG	#$1A00
 ;################################################################
 
-DL_RAM_Start			ds	256	;	$1900-$19FF
+DL_RAM_Start			ds	256	;	$1A00-$1AFF
 
 ;################################################################
 ; Other RAM
@@ -469,7 +469,7 @@ Initialization
 MainLoop:
 	JSR	WaitVBLANK	; avoid any process-corruption issues with DMA-interrupts
 				; also, force calc's once per frame
-	; Canary check, courtesy of Atariage user RevEng
+	; Canary check, courtesy of Atariage user @RevEng
 	LDA	Canary
 	BEQ	CanaryIsAlive
 	LDA	#$45 ; RED
