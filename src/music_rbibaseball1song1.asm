@@ -319,7 +319,6 @@ RBIBaseball1Song1Track3
   ENDIF
 
 RBIBaseball1Song1Track3Stops
-	; This track has no music
 	dc.b	#$00, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track3Stops

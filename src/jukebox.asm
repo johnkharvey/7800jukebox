@@ -121,7 +121,7 @@ PALETTE5		equ	#%00000101
 PALETTE6		equ	#%00000110
 PALETTE7		equ	#%00000111
 
-NUMBER_OF_SONGS		equ	16
+NUMBER_OF_SONGS		equ	18
 
 ;################################################################
 ; Let's define macros here
@@ -720,109 +720,31 @@ DoneWithButtons
 	; Display graphics depending on Joystick
 	;========================================
 DrawScreen
-	LDA	HighlightIndex
-	BEQ	TextIndexZero
-	CMP	#1
-	BEQ	TextIndexOne
-	CMP	#2
-	BEQ	TextIndexTwo
-	CMP	#3
-	BEQ	TextIndexThree
-	CMP	#4
-	BEQ	TextIndexFour
-	CMP	#5
-	BEQ	TextIndexFive
-	CMP	#6
-	BEQ	TextIndexSix
-	CMP	#7
-	BEQ	TextIndexSeven
-	CMP	#8
-	BEQ	TextIndexEight
-	CMP	#9
-	BEQ	TextIndexNine
-	CMP	#10
-	BEQ	TextIndexTen
-	CMP	#11
-	BEQ	TextIndexEleven
-	CMP	#12
-	BEQ	TextIndexTwelve
-	CMP	#13
-	BEQ	TextIndexThirteen
-	CMP	#14
-	BEQ	TextIndexFourteen
-	CMP	#15
-	BEQ	TextIndexFifteen
-	; fall-through
-	JMP	TextIndexPressUpOrDown
-TextIndexZero
-	LDA	#<DL_Spelunker1
+	LDX	HighlightIndex
+	LDA	DL_Table_For_Screen,X
 	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexOne
-	LDA	#<DL_Spelunker2
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexTwo
-	LDA	#<DL_Spelunker3
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexThree
-	LDA	#<DL_Spelunker4
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexFour
-	LDA	#<DL_Spelunker5
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexFive
-	LDA	#<DL_Spelunker6
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexSix
-	LDA	#<DL_Spelunker7
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexSeven
-	LDA	#<DL_Spelunker8
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexEight
-	LDA	#<DL_Spelunker9
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexNine
-	LDA	#<DL_Spelunker10
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexTen
-	LDA	#<DL_Goonies2Song1
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexEleven
-	LDA	#<DL_Goonies2Song2
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexTwelve
-	LDA	#<DL_Goonies2Song3
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexThirteen
-	LDA	#<DL_Goonies2Song4
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexFourteen
-	LDA	#<DL_Castlevania1Song6
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexFifteen
-	LDA	#<DL_RBIBaseball1Song1
-	STA	DLL_On_Screen+32
-	JMP	AfterText
-TextIndexPressUpOrDown
-	LDA	#<DL_PressUpOrDown
-	STA	DLL_On_Screen+32
-AfterText
 	RTS
+
+DL_Table_For_Screen
+	dc.b	#<DL_Spelunker1
+	dc.b	#<DL_Spelunker2
+	dc.b	#<DL_Spelunker3
+	dc.b	#<DL_Spelunker4
+	dc.b	#<DL_Spelunker5
+	dc.b	#<DL_Spelunker6
+	dc.b	#<DL_Spelunker7
+	dc.b	#<DL_Spelunker8
+	dc.b	#<DL_Spelunker9
+	dc.b	#<DL_Spelunker10
+	dc.b	#<DL_Goonies2Song1
+	dc.b	#<DL_Goonies2Song2
+	dc.b	#<DL_Goonies2Song3
+	dc.b	#<DL_Goonies2Song4
+	dc.b	#<DL_Castlevania1Song6
+	dc.b	#<DL_RBIBaseball1Song1
+	dc.b	#<DL_RBIBaseball1Song2
+	dc.b	#<DL_RBIBaseball1Song3
+	dc.b	#<DL_PressUpOrDown
 
 callJumpTableSubroutine:
 	LDA	PlaylistLSB,X
@@ -848,6 +770,8 @@ PlaylistMSB
 	dc.b	#>SeedPokeyForGoonies2Song4
 	dc.b	#>SeedPokeyForCastlevania1Song6
 	dc.b	#>SeedPokeyForRBIBaseball1Song1
+	dc.b	#>SeedPokeyForRBIBaseball1Song2
+	dc.b	#>SeedPokeyForRBIBaseball1Song3
 
 PlaylistLSB
 	dc.b	#<SeedPokeyForSpelunker1
@@ -866,6 +790,8 @@ PlaylistLSB
 	dc.b	#<SeedPokeyForGoonies2Song4
 	dc.b	#<SeedPokeyForCastlevania1Song6
 	dc.b	#<SeedPokeyForRBIBaseball1Song1
+	dc.b	#<SeedPokeyForRBIBaseball1Song2
+	dc.b	#<SeedPokeyForRBIBaseball1Song3
 
 ;################################################################
 ; CHMAP Pointers to the graphic data are here - $1800 in RAM
@@ -926,6 +852,12 @@ CHMAP_Castlevania1Song6
 
 CHMAP_RBIBaseball1Song1
    STR_LEN "R.B.I. Baseball - Song 1", CHMAP_RBIBaseball1Song1
+
+CHMAP_RBIBaseball1Song2
+   STR_LEN "R.B.I. Baseball - Song 2", CHMAP_RBIBaseball1Song2
+
+CHMAP_RBIBaseball1Song3
+   STR_LEN "R.B.I. Baseball - Song 3", CHMAP_RBIBaseball1Song3
 
 CHMAP_PressUpOrDown
    STR_LEN "Press up or down", CHMAP_PressUpOrDown
@@ -1079,6 +1011,22 @@ DL_RBIBaseball1Song1
 	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
 	dc.b	>CHMAP_RBIBaseball1Song1
 	dc.b	PALETTE0+$20-STR_LEN_CHMAP_RBIBaseball1Song1
+	dc.b	50 ; HPos (0-159)
+	dc.b	$00,$00
+
+DL_RBIBaseball1Song2
+	dc.b	<CHMAP_RBIBaseball1Song2
+	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
+	dc.b	>CHMAP_RBIBaseball1Song2
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_RBIBaseball1Song2
+	dc.b	50 ; HPos (0-159)
+	dc.b	$00,$00
+
+DL_RBIBaseball1Song3
+	dc.b	<CHMAP_RBIBaseball1Song3
+	dc.b	$60 ; D7 = Write Mode bit: 0=160x2 or 320x1, 1=160x4 or 320x2. D6=1. D5 = Indirect mode bit: 0=direct, 1=indirect mode.
+	dc.b	>CHMAP_RBIBaseball1Song3
+	dc.b	PALETTE0+$20-STR_LEN_CHMAP_RBIBaseball1Song3
 	dc.b	50 ; HPos (0-159)
 	dc.b	$00,$00
 
