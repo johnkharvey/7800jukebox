@@ -14,6 +14,9 @@ A7800_VERSION=v5.2
 DEVKIT_VERSION=0.20.1
 DEVKIT_URL=http://7800.8bitdev.org/images/6/60/7800AsmDevKit-0.20.1-osx-x64.tar.gz
 
+# Release info
+RELEASE_VERSION=1.0.3
+
 #=========
 # Aliases
 #=========
@@ -34,7 +37,7 @@ SLEEP=/bin/sleep
 #===============
 # Build Targets
 #===============
-.PHONY:	all run clean megaclean setup
+.PHONY:	all run clean megaclean setup release
 
 all:	out/jukebox.a78
 
@@ -137,3 +140,13 @@ megaclean:	clean
 	rm -rf bin/a7800
 	#rm -rf ~/.a7800
 	#sudo rm -rf /Volumes/SDL2/SDL2.framework
+
+#=================
+# Release targets
+#=================
+release:	clean all
+	cp out/jukebox.bin out/jukebox_${RELEASE_VERSION}.bin
+	cp out/jukebox.a78 out/jukebox_${RELEASE_VERSION}.a78
+	cp out/jukebox.symbol.txt out/jukebox_${RELEASE_VERSION}.symbol.txt
+	cp out/jukebox.annotated_source.txt out/jukebox.annotated_source_${RELEASE_VERSION}.txt
+	gh release create ${RELEASE_VERSION} out/jukebox_${RELEASE_VERSION}*
