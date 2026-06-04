@@ -18,43 +18,43 @@ Spelunker9Track1
 
   IF MUTE_TRACK1
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track1
 	dc.b	#>Spelunker9Track1
   ELSE
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$28, #18, #VOL04_CONST ; E
-	dc.b	#$33, #18, #VOL04_CONST ; C
-	dc.b	#$28, #24, #VOL04_CONST ; E
-	dc.b	#$33, #12, #VOL04_CONST ; C
-	dc.b	#$28, #6,  #VOL04_CONST ; E
-	dc.b	#$33, #18, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #18, #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #18, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #24, #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #12, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #6,  #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #18, #VOL04_CONST ; C
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$28, #18, #VOL04_CONST ; E
-	dc.b	#$33, #18, #VOL04_CONST ; C
-	dc.b	#$28, #24, #VOL04_CONST ; E
-	dc.b	#$33, #12, #VOL04_CONST ; C
-	dc.b	#$28, #6,  #VOL04_CONST ; E
-	dc.b	#$33, #18, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #18, #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #18, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #24, #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #12, #VOL04_CONST ; C
+	dc.b	#MAIN_OCT5_E,  #6,  #VOL04_CONST ; E
+	dc.b	#MAIN_OCT5_C,  #18, #VOL04_CONST ; C
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$2D, #18, #VOL04_CONST ; D
-	dc.b	#$39, #18, #VOL04_CONST ; A#
-	dc.b	#$2D, #24, #VOL04_CONST ; D
-	dc.b	#$39, #12, #VOL04_CONST ; A#
-	dc.b	#$2D, #6,  #VOL04_CONST ; D
-	dc.b	#$39, #18, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #18, #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #18, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #24, #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #12, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #6,  #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #18, #VOL04_CONST ; A#
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$2D, #18, #VOL04_CONST ; D
-	dc.b	#$39, #18, #VOL04_CONST ; A#
-	dc.b	#$2D, #24, #VOL04_CONST ; D
-	dc.b	#$39, #12, #VOL04_CONST ; A#
-	dc.b	#$2D, #6,  #VOL04_CONST ; D
-	dc.b	#$39, #18, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #18, #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #18, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #24, #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #12, #VOL04_CONST ; A#
+	dc.b	#MAIN_OCT5_D,  #6,  #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_AS, #18, #VOL04_CONST ; A#
 
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track1
@@ -72,43 +72,43 @@ Spelunker9Track2
 
   IF MUTE_TRACK2
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track2
 	dc.b	#>Spelunker9Track2
   ELSE
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$3B, #18, #VOL04_CONST ; C
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$3B, #24, #VOL04_CONST ; C
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$3B, #6,  #VOL04_CONST ; C
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #18, #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #24, #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #6,  #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$3B, #18, #VOL04_CONST ; C
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$3B, #24, #VOL04_CONST ; C
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$3B, #6,  #VOL04_CONST ; C
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #18, #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #24, #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT3_C, #6,  #VOL04_CONST ; C
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$42, #18, #VOL04_CONST ; A#
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$42, #24, #VOL04_CONST ; A#
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$42, #6,  #VOL04_CONST ; A#
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #18, #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #24, #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #12, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #6,  #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column H (brown)
-	dc.b	#$42, #18, #VOL04_CONST ; A#
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$42, #24, #VOL04_CONST ; A#
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$42, #6,  #VOL04_CONST ; A#
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #18, #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #18, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #24, #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #12, #RESTDEFAULT ; rest
+	dc.b	#BASS_OCT2_AS, #6,  #VOL04_CONST ; A#
+	dc.b	#RESTNOSOUND,  #18, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track2
@@ -126,43 +126,43 @@ Spelunker9Track3
 
   IF MUTE_TRACK3
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track3
 	dc.b	#>Spelunker9Track3
   ELSE
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$46, #18, #ARCH24_16FD ; G
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #ARCH24_16FD ; G
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #6,  #ARCH24_16FD ; G
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #18, #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #24, #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #6,  #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$46, #18, #ARCH24_16FD ; G
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$46, #24, #ARCH24_16FD ; G
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$46, #6,  #ARCH24_16FD ; G
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #18, #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #24, #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_G, #6,  #ARCH24_16FD ; G
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$4F, #18, #ARCH24_16FD ; F
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$4F, #24, #ARCH24_16FD ; F
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #6,  #ARCH24_16FD ; F
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #18, #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #24, #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #6,  #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$4F, #18, #ARCH24_16FD ; F
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
-	dc.b	#$4F, #24, #ARCH24_16FD ; F
-	dc.b	#$00, #12, #RESTDEFAULT ; rest
-	dc.b	#$4F, #6,  #ARCH24_16FD ; F
-	dc.b	#$00, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #18, #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #24, #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #12, #RESTDEFAULT ; rest
+	dc.b	#MAIN_OCT4_F, #6,  #ARCH24_16FD ; F
+	dc.b	#RESTNOSOUND, #18, #RESTDEFAULT ; rest
 
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track3
@@ -177,14 +177,14 @@ Spelunker9Track4
 
   IF MUTE_TRACK4
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track4
 	dc.b	#>Spelunker9Track4
   ELSE
 
 	; This track has no music
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Spelunker9Track4
 	dc.b	#>Spelunker9Track4
