@@ -18,20 +18,20 @@ Goonies2Song2Track1
 
   IF MUTE_TRACK1
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track1
 	dc.b	#>Goonies2Song2Track1
   ELSE
 
 	; Uses pokey_notes column P (green)
-	dc.b	#$53, #6,  #VOL08_CONST ; E
-	dc.b	#$6A, #6,  #VOL06_CONST ; C
-	dc.b	#$5E, #6,  #VOL04_CONST ; D
-	dc.b	#$46, #12, #VOL02_CONST ; G
+	dc.b	#MAIN_OCT4_E,  #6,  #VOL08_CONST ; E
+	dc.b	#MAIN_OCT4_C,  #6,  #VOL06_CONST ; C
+	dc.b	#MAIN_OCT4_D,  #6,  #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_G,  #12, #VOL02_CONST ; G
 
 Goonies2Song2Track1Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track1Stops
 	dc.b	#>Goonies2Song2Track1Stops
@@ -49,19 +49,19 @@ Goonies2Song2Track2
 
   IF MUTE_TRACK2
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track2
 	dc.b	#>Goonies2Song2Track2
   ELSE
 	; Uses pokey_notes column H (brown)
-	dc.b	#$2F, #6,  #VOL06_CONST ; E
-	dc.b	#$3B, #6,  #VOL06_CONST ; C
-	dc.b	#$34, #6,  #VOL06_CONST ; D
-	dc.b	#$27, #18, #VOL06_CONST ; G
+	dc.b	#BASS_OCT3_E,  #6,  #VOL06_CONST ; E
+	dc.b	#BASS_OCT3_C,  #6,  #VOL06_CONST ; C
+	dc.b	#BASS_OCT3_D,  #6,  #VOL06_CONST ; D
+	dc.b	#BASS_OCT3_G,  #18, #VOL06_CONST ; G
 
 Goonies2Song2Track2Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track2Stops
 	dc.b	#>Goonies2Song2Track2Stops
@@ -77,19 +77,19 @@ Goonies2Song2Track3
 
   IF MUTE_TRACK3
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track3
 	dc.b	#>Goonies2Song2Track3
   ELSE
 	; Uses pokey_notes column P (green)
-	dc.b	#$53, #6,  #VOL08_CONST ; E
-	dc.b	#$6A, #6,  #VOL06_CONST ; C
-	dc.b	#$5E, #6,  #VOL04_CONST ; D
-	dc.b	#$46, #12, #ARCH96_72FD ; G
+	dc.b	#MAIN_OCT4_E,  #6,  #VOL08_CONST ; E
+	dc.b	#MAIN_OCT4_C,  #6,  #VOL06_CONST ; C
+	dc.b	#MAIN_OCT4_D,  #6,  #VOL04_CONST ; D
+	dc.b	#MAIN_OCT4_G,  #12, #ARCH96_72FD ; G
 
 Goonies2Song2Track3Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track3Stops
 	dc.b	#>Goonies2Song2Track3Stops
@@ -103,7 +103,7 @@ Goonies2Song2Track4
 
   IF MUTE_TRACK4
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track4
 	dc.b	#>Goonies2Song2Track4
@@ -111,7 +111,7 @@ Goonies2Song2Track4
 
 	; This track has no music
 Goonies2Song2Track4Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Goonies2Song2Track4Stops
 	dc.b	#>Goonies2Song2Track4Stops

@@ -22,7 +22,7 @@ RBIBaseball1Song2Track1
 
   IF MUTE_TRACK1
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track1
 	dc.b	#>RBIBaseball1Song2Track1
@@ -109,7 +109,7 @@ RBIBaseball1Song2Track2
 
   IF MUTE_TRACK2
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track2
 	dc.b	#>RBIBaseball1Song2Track2
@@ -257,14 +257,14 @@ RBIBaseball1Song2Track3
 
   IF MUTE_TRACK3
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track3
 	dc.b	#>RBIBaseball1Song2Track3
   ELSE
 
 	; This track has no music
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track3
 	dc.b	#>RBIBaseball1Song2Track3
@@ -278,14 +278,14 @@ RBIBaseball1Song2Track4
 
   IF MUTE_TRACK4
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track4
 	dc.b	#>RBIBaseball1Song2Track4
   ELSE
 
         ; This track has no music
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song2Track4
 	dc.b	#>RBIBaseball1Song2Track4

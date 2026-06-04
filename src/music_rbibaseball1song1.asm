@@ -22,7 +22,7 @@ RBIBaseball1Song1Track1
 
   IF MUTE_TRACK1
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track1
 	dc.b	#>RBIBaseball1Song1Track1
@@ -104,7 +104,7 @@ RBIBaseball1Song1Track1
   ENDIF
 
 RBIBaseball1Song1Track1Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track1Stops
 	dc.b	#>RBIBaseball1Song1Track1Stops
@@ -121,7 +121,7 @@ RBIBaseball1Song1Track2
 
   IF MUTE_TRACK2
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track2
 	dc.b	#>RBIBaseball1Song1Track2
@@ -219,7 +219,7 @@ RBIBaseball1Song1Track2
   ENDIF
 
 RBIBaseball1Song1Track2Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track2Stops
 	dc.b	#>RBIBaseball1Song1Track2Stops
@@ -236,7 +236,7 @@ RBIBaseball1Song1Track3
 
   IF MUTE_TRACK3
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track3
 	dc.b	#>RBIBaseball1Song1Track3
@@ -319,7 +319,7 @@ RBIBaseball1Song1Track3
   ENDIF
 
 RBIBaseball1Song1Track3Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track3Stops
 	dc.b	#>RBIBaseball1Song1Track3Stops
@@ -333,7 +333,7 @@ RBIBaseball1Song1Track4
 
   IF MUTE_TRACK4
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track4
 	dc.b	#>RBIBaseball1Song1Track4
@@ -341,185 +341,185 @@ RBIBaseball1Song1Track4
 
   IF RBIBASEBALL1SONG1_PLAY_PHRASE1
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #17, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #17, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
 
 	;===============
 
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #17, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #17, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	;==============
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	;============
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #17, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #17, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #38, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #38, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
   ENDIF
 
   IF RBIBASEBALL1SONG1_PLAY_PHRASE2
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	;===========
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-
-	;============
-
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
-
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
-
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
-
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	;============
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
-	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #17, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 
 	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
-	dc.b	#$00, #17, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
+
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+
+	;============
+
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
+
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #17, #RESTDEFAULT ; rest
+
+	dc.b	#HIGHERSNARE, #4, #VOL02_CONST
+	dc.b	#RESTNOSOUND, #17, #RESTDEFAULT ; rest
 
 	;===========
   ENDIF
 
 RBIBaseball1Song1Track4Stops
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song1Track4Stops
 	dc.b	#>RBIBaseball1Song1Track4Stops

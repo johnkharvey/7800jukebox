@@ -1077,7 +1077,7 @@ Castlevania1Song6Track3
 
   IF MUTE_TRACK3
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Castlevania1Song6Track3
 	dc.b	#>Castlevania1Song6Track3
@@ -1517,10 +1517,10 @@ Castlevania1Song6Track3Restart
 	dc.b	#MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
 	dc.b	#MAIN_OCT5_DS, #14, #VOL06_CONST ; D#
 	dc.b	#MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
-	dc.b	#MAIN_OCT5_DS, #21,  #VOL06_CONST ; D#
-	dc.b	#MAIN_OCT5_C,  #14,  #VOL06_CONST ; C
-	dc.b	#MAIN_OCT5_D,  #14,  #VOL06_CONST ; D
-	dc.b	#MAIN_OCT5_C,  #14,  #VOL06_CONST ; C
+	dc.b	#MAIN_OCT5_DS, #21, #VOL06_CONST ; D#
+	dc.b	#MAIN_OCT5_C,  #14, #VOL06_CONST ; C
+	dc.b	#MAIN_OCT5_D,  #14, #VOL06_CONST ; D
+	dc.b	#MAIN_OCT5_C,  #14, #VOL06_CONST ; C
 
 	; Uses pokey_notes column P (green)
 	dc.b	#MAIN_OCT5_DS, #7,  #VOL06_CONST ; D#
@@ -1529,32 +1529,32 @@ Castlevania1Song6Track3Restart
 	dc.b	#MAIN_OCT5_D,  #7,  #VOL06_CONST ; D
 	dc.b	#MAIN_OCT5_DS, #14, #VOL06_CONST ; D#
 	dc.b	#MAIN_OCT5_C,  #7,  #VOL06_CONST ; C
-	dc.b	#MAIN_OCT5_DS, #21,  #VOL06_CONST ; D#
-	dc.b	#MAIN_OCT5_C,  #14,  #VOL06_CONST ; C
-	dc.b	#MAIN_OCT5_D,  #14,  #VOL06_CONST ; D
-	dc.b	#MAIN_OCT5_C,  #14,  #VOL06_CONST ; C
+	dc.b	#MAIN_OCT5_DS, #21, #VOL06_CONST ; D#
+	dc.b	#MAIN_OCT5_C,  #14, #VOL06_CONST ; C
+	dc.b	#MAIN_OCT5_D,  #14, #VOL06_CONST ; D
+	dc.b	#MAIN_OCT5_C,  #14, #VOL06_CONST ; C
 
 	; Uses pokey_notes column P (green)
-	dc.b	#MAIN_OCT5_DS, #21,  #VOL06_CONST ; D#
-	dc.b	#MAIN_OCT5_C,  #21,  #VOL06_CONST ; C
-	dc.b	#MAIN_OCT5_DS, #14,  #VOL06_CONST ; D#
-	dc.b	#MAIN_OCT5_F,  #21,  #VOL06_CONST ; F
-	dc.b	#MAIN_OCT5_D,  #21,  #VOL06_CONST ; D
-	dc.b	#MAIN_OCT5_F,  #14,  #VOL06_CONST ; F
+	dc.b	#MAIN_OCT5_DS, #21, #VOL06_CONST ; D#
+	dc.b	#MAIN_OCT5_C,  #21, #VOL06_CONST ; C
+	dc.b	#MAIN_OCT5_DS, #14, #VOL06_CONST ; D#
+	dc.b	#MAIN_OCT5_F,  #21, #VOL06_CONST ; F
+	dc.b	#MAIN_OCT5_D,  #21, #VOL06_CONST ; D
+	dc.b	#MAIN_OCT5_F,  #14, #VOL06_CONST ; F
 
 	; Uses pokey_notes column P (green)
-	dc.b	#MAIN_OCT5_G,  #21,  #VOL06_CONST ; G
-	dc.b	#MAIN_OCT5_F,  #21,  #VOL06_CONST ; F
-	dc.b	#MAIN_OCT5_G,  #14,  #VOL06_CONST ; G
-	dc.b	#MAIN_OCT5_AS, #21,  #VOL06_CONST ; A# - a little out of tune
-	dc.b	#MAIN_OCT5_GS, #21,  #VOL06_CONST ; G#
-	dc.b	#MAIN_OCT5_AS, #14,  #VOL06_CONST ; A# - a little out of tune
+	dc.b	#MAIN_OCT5_G,  #21, #VOL06_CONST ; G
+	dc.b	#MAIN_OCT5_F,  #21, #VOL06_CONST ; F
+	dc.b	#MAIN_OCT5_G,  #14, #VOL06_CONST ; G
+	dc.b	#MAIN_OCT5_AS, #21, #VOL06_CONST ; A# - a little out of tune
+	dc.b	#MAIN_OCT5_GS, #21, #VOL06_CONST ; G#
+	dc.b	#MAIN_OCT5_AS, #14, #VOL06_CONST ; A# - a little out of tune
 
 	; Uses pokey_notes column P (green)
-	dc.b	#MAIN_OCT6_C,  #112,  #VOL06_CONST ; C
+	dc.b	#MAIN_OCT6_C,  #112, #VOL06_CONST ; C
 
 	; Uses pokey_notes column P (green)
-	dc.b	#RESTNOSOUND,  #112,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND,  #112, #RESTDEFAULT ; rest
   ENDIF
 
 	dc.b	#$FF
@@ -1570,7 +1570,7 @@ Castlevania1Song6Track4
 
   IF MUTE_TRACK4
 	; HACK - turn these lines to shut off music for this track
-	dc.b	#$00, #96, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
 	dc.b	#$FF
 	dc.b	#<Castlevania1Song6Track4
 	dc.b	#>Castlevania1Song6Track4
@@ -1578,642 +1578,642 @@ Castlevania1Song6Track4
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE1
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
   ENDIF
 
 Castlevania1Song6Track4Restart
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE2
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE3
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE4
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 
 
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
   ENDIF
 
   IF CASTLEVANIA1SONG6_PLAY_PHRASE5
-	dc.b	#$00, #14, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #14, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 
 	; crazy stuff happens here
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest ; I usually count these in blocks of 112 beats, but this spills over by 7
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest ; I usually count these in blocks of 112 beats, but this spills over by 7
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM4FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest ; I usually count these in blocks of 112 beats, but this spills over by 7
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest ; I usually count these in blocks of 112 beats, but this spills over by 7
 
 
-	dc.b	#$00, #7,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #7,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #3, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#SNAREDRUM, #4, #DRUM4FRAMES
-	dc.b	#$00, #10, #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #10, #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #8, #DRUM8FRAMES
-	dc.b	#$00, #6,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #6,  #RESTDEFAULT ; rest
 	dc.b	#HIGHSNARE, #4, #DRUM4FRAMES
-	dc.b	#$00, #3,  #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #3,  #RESTDEFAULT ; rest
   ENDIF
 
 	dc.b	#$FF

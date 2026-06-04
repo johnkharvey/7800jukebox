@@ -100,7 +100,7 @@ Spelunker10Track2
 
 	; Uses pokey_notes column H (brown)
 	dc.b	#BASS_OCT2_B, #168, #VOL02_CONST ; B
-	dc.b	#RESTNOSOUND, #24 , #RESTDEFAULT ; rest
+	dc.b	#RESTNOSOUND, #24,  #RESTDEFAULT ; rest
 
 Spelunker10Track2Stops
 	dc.b	#RESTNOSOUND, #96, #RESTDEFAULT ; rest
