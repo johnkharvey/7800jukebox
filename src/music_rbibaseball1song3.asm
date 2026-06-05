@@ -55,7 +55,6 @@ RBIBaseball1Song3Track1
         dc.b    #MAIN_OCT4_A,  #8,  #ARCH12_16EX ; A
         dc.b    #MAIN_OCT4_A,  #16, #ARCH48_24FD ; A
         dc.b    #RESTNOSOUND,  #32, #RESTDEFAULT ; rest
-  ENDIF
 
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song3Track1
@@ -125,7 +124,6 @@ RBIBaseball1Song3Track2
         dc.b    #BASS_OCT3_CS, #8,  #VOL02REST02 ; C#
         dc.b    #BASS_OCT3_E,  #8,  #VOL02REST02 ; E
         dc.b    #BASS_OCT3_A,  #8,  #VOL02REST02 ; A
-  ENDIF
 
 	dc.b	#$FF
 	dc.b	#<RBIBaseball1Song3Track2
