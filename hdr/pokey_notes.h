@@ -14,7 +14,7 @@ RESTNOSOUND	equ	$00
 ;==========================
 
 MAIN_OCT2_AS	equ	$F0 ; A#
-MAIN_OCT2_A	equ	$E3 ; B
+MAIN_OCT2_B	equ	$E3 ; B
 
 MAIN_OCT3_C	equ	$D8 ; C
 MAIN_OCT3_CS	equ	$CD ; C#
